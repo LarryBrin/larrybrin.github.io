@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="Path 句法(URL)：
+
+
+Syntax
+Meaning
+
+
+
+
+tag
+Selects all child elements with the given tag. For example, spam selects all child elements named spam, and spa">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="hongyuan shao">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Xpath Syntax"/>
+    
+
+    <!--Open Graph Description-->
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="hongyuan&#39;s blog"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+    <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>Xpath Syntax - hongyuan&#39;s blog</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Google Analytics -->
+    
+
+
+</head>
+
+
+<body>
+
+<div class="bg-gradient"></div>
+<div class="bg-pattern"></div>
+
+<!-- Menu -->
+<!--Menu Links and Overlay-->
+<div class="menu-bg">
+    <div class="menu-container">
+        <ul>
+            
+            <li class="menu-item">
+                <a href="/">
+                    Home
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/archives">
+                    Archives
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/about.html">
+                    About
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/tags">
+                    Tags
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/categories">
+                    Categories
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/contact.html">
+                    Contact
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+<!--Hamburger Icon-->
+<nav>
+    <a href="#menu"></a>
+</nav>
+
+<div class="container">
+
+    <!-- Main Content -->
+    <div class="row">
+    <div class="col-sm-12">
+
+        <!--Title and Logo-->
+        <header>
+    <div class="logo">
+        <a href="/"><i class="logo-icon fa fa-cube" aria-hidden="true"></i></a>
+        
+    </div>
+</header>
+
+        <section class="main">
+            
+<div class="post">
+
+    <div class="post-header">
+        <h1 class="title">
+            <a href="/2018/01/01/Xpath-syntax/">
+                Xpath Syntax
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2018-01-01</span>
+            
+            
+            
+        </div>
+    </div>
+
+    <div class="content">
+
+        <!-- Gallery -->
+        
+
+        <!-- Post Content -->
+        <h3 id="Path-句法-URL-："><a href="#Path-句法-URL-：" class="headerlink" title="Path 句法(URL)："></a>Path 句法(<a href="https://docs.python.org/2/library/xml.etree.elementtree.html" target="_blank" rel="noopener">URL</a>)：</h3><table>
+<thead>
+<tr>
+<th>Syntax</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>tag</code></td>
+<td>Selects all child elements with the given tag. For example, <code>spam</code> selects all child elements named <code>spam</code>, and <code>spam/egg</code> selects all grandchildren named <code>egg</code> in all children named <code>spam</code>.</td>
+</tr>
+<tr>
+<td><code>*</code></td>
+<td>Selects all child elements. For example, <code>*/egg</code> selects all grandchildren named <code>egg</code>.</td>
+</tr>
+<tr>
+<td><code>.</code></td>
+<td>Selects the current node. This is mostly useful at the beginning of the path, to indicate that it’s a relative path.</td>
+</tr>
+<tr>
+<td><code>//</code></td>
+<td>Selects all subelements, on all levels beneath the current element. For example, <code>.//egg</code> selects all <code>egg</code> elements in the entire tree.</td>
+</tr>
+<tr>
+<td><code>..</code></td>
+<td>Selects the parent element.</td>
+</tr>
+<tr>
+<td><code>[@attrib]</code></td>
+<td>Selects all elements that have the given attribute.</td>
+</tr>
+<tr>
+<td><code>[@attrib=&#39;value&#39;]</code></td>
+<td>Selects all elements for which the given attribute has the given value. The value cannot contain quotes.</td>
+</tr>
+<tr>
+<td><code>[tag]</code></td>
+<td>Selects all elements that have a child named <code>tag</code>. Only immediate children are supported.</td>
+</tr>
+<tr>
+<td><code>[tag=&#39;text&#39;]</code></td>
+<td>Selects all elements that have a child named <code>tag</code> whose complete text content, including descendants, equals the given <code>text</code>.</td>
+</tr>
+<tr>
+<td><code>[position]</code></td>
+<td>Selects all elements that are located at the given position. The position can be either an integer (1 is the first position), the expression <code>last()</code> (for the last position), or a position relative to the last position (e.g. <code>last()-1</code>).</td>
+</tr>
+</tbody>
+</table>
+<p>Predicates (expressions within square brackets) must be preceded by a tag name, an asterisk, or another predicate. <code>position</code> predicates must be preceded by a tag name.</p>
+<p>Xpath Python使用示例：</p>
+<p>Here’s an example that demonstrates some of the XPath capabilities of the module. We’ll be using the <code>countrydata</code> <strong>XML document</strong> from the <a href="#elementtree-parsing-xml">Parsing XML</a> section:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> xml.etree.ElementTree <span class="keyword">as</span> ET</span><br><span class="line"></span><br><span class="line">root = ET.fromstring(countrydata)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Top-level elements</span></span><br><span class="line">root.findall(<span class="string">"."</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># All 'neighbor' grand-children of 'country' children of the top-level</span></span><br><span class="line"><span class="comment"># elements</span></span><br><span class="line">root.findall(<span class="string">"./country/neighbor"</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Nodes with name='Singapore' that have a 'year' child</span></span><br><span class="line">root.findall(<span class="string">".//year/..[@name='Singapore']"</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 'year' nodes that are children of nodes with name='Singapore'</span></span><br><span class="line">root.findall(<span class="string">".//*[@name='Singapore']/year"</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># All 'neighbor' nodes that are the second child of their parent</span></span><br><span class="line">root.findall(<span class="string">".//neighbor[2]"</span>)</span><br></pre></td></tr></table></figure>
+<p>以上示例用于XML文本，如果要作用于HTML文本，需要将 <code>import xml.etree.ElementTree as ET</code> 改为 <code>import lxml.html</code> ，以及将 <code>root = ET.fromstring(countrydata)</code> 改为 <code>root = lxml.html.fromstring(HTMLData)</code></p>
+<h2 id="XPath-Axes"><a href="#XPath-Axes" class="headerlink" title="XPath Axes"></a>XPath Axes</h2><p>An axis defines a node-set relative to the current node.</p>
+<table>
+<thead>
+<tr>
+<th>AxisName</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ancestor</td>
+<td>Selects all ancestors (parent, grandparent, etc.) of the current node</td>
+</tr>
+<tr>
+<td>ancestor-or-self</td>
+<td>Selects all ancestors (parent, grandparent, etc.) of the current node and the current node itself</td>
+</tr>
+<tr>
+<td>attribute</td>
+<td>Selects all attributes of the current node</td>
+</tr>
+<tr>
+<td>child</td>
+<td>Selects all children of the current node</td>
+</tr>
+<tr>
+<td>descendant</td>
+<td>Selects all descendants (children, grandchildren, etc.) of the current node</td>
+</tr>
+<tr>
+<td>descendant-or-self</td>
+<td>Selects all descendants (children, grandchildren, etc.) of the current node and the current node itself</td>
+</tr>
+<tr>
+<td>following</td>
+<td>Selects everything in the document after the closing tag of the current node</td>
+</tr>
+<tr>
+<td>following-sibling</td>
+<td>Selects all siblings after the current node</td>
+</tr>
+<tr>
+<td>namespace</td>
+<td>Selects all namespace nodes of the current node</td>
+</tr>
+<tr>
+<td>parent</td>
+<td>Selects the parent of the current node</td>
+</tr>
+<tr>
+<td>preceding</td>
+<td>Selects all nodes that appear before the current node in the document, except ancestors, attribute nodes and namespace nodes</td>
+</tr>
+<tr>
+<td>preceding-sibling</td>
+<td>Selects all siblings before the current node</td>
+</tr>
+<tr>
+<td>self</td>
+<td>Selects the current node</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Axe-Examples"><a href="#Axe-Examples" class="headerlink" title="Axe Examples"></a>Axe Examples</h3><table>
+<thead>
+<tr>
+<th>Example</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>child::book</td>
+<td>Selects all book nodes that are children of the current node</td>
+</tr>
+<tr>
+<td>attribute::lang</td>
+<td>Selects the lang attribute of the current node</td>
+</tr>
+<tr>
+<td>child::*</td>
+<td>Selects all element children of the current node</td>
+</tr>
+<tr>
+<td>attribute::*</td>
+<td>Selects all attributes of the current node</td>
+</tr>
+<tr>
+<td>child::text()</td>
+<td>Selects all text node children of the current node</td>
+</tr>
+<tr>
+<td>child::node()</td>
+<td>Selects all children of the current node</td>
+</tr>
+<tr>
+<td>descendant::book</td>
+<td>Selects all book descendants of the current node</td>
+</tr>
+<tr>
+<td>ancestor::book</td>
+<td>Selects all book ancestors of the current node</td>
+</tr>
+<tr>
+<td>ancestor-or-self::book</td>
+<td>Selects all book ancestors of the current node - and the current as well if it is a book node</td>
+</tr>
+<tr>
+<td>child::*/child::price</td>
+<td>Selects all price grandchildren of the current node</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+
+    
+
+    
+        <div class="post-tags">
+            <i class="fa fa-tags" aria-hidden="true"></i>
+            <a href="/tags/Xpath-Python/">#Xpath, Python</a>
+        </div>
+    
+
+    <!-- Comments -->
+    
+
+</div>
+        </section>
+
+    </div>
+</div>
+
+
+</div>
+
+<!-- Footer -->
+<div class="push"></div>
+
+<footer class="footer-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 footer-about">
+                <h2>About</h2>
+                <p>
+                    This theme was developed by <a href="https://github.com/klugjo">Jonathan Klughertz</a>. The source code is available on Github. Create Websites. Make Magic.
+                </p>
+            </div>
+            
+    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 recent-posts">
+        <h2>Recent Posts</h2>
+        <ul>
+            
+            <li>
+                <a class="footer-post" href="/2018/01/16/hello-world/">Hello World</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2018/01/14/CSV-files/">CSV Files</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2018/01/11/python爬虫较为常用packages/">Python爬虫较为常用packages</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2018/01/08/Regex-syntax/">Regex Syntax</a>
+            </li>
+            
+        </ul>
+    </div>
+
+
+
+            
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ul class="list-inline footer-social-icons">
+                    
+                    <li class="list-inline-item">
+                        <a href="https://github.com/klugjo/hexo-theme-alpha-dust">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-github"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://twitter.com/?lang=en">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-twitter"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-facebook"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://www.instagram.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-instagram"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://dribbble.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-dribbble"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://plus.google.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-google-plus"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://www.behance.net/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-behance"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://500px.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-500px"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="mailto:test@example.com">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-envelope-o"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="\#">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-rss"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="footer-copyright">
+                    @Untitled. All right reserved | Design & Hexo <a href="http://www.codeblocq.com/">Jonathan Klughertz</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- After footer scripts -->
+
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Tween Max -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Custom JavaScript -->
+<script src="/js/main.js"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>

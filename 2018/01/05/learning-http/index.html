@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="Request123456Request       = Request-Line                                      *(( general-header                                 | request-header    ">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="hongyuan shao">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Learning Http"/>
+    
+
+    <!--Open Graph Description-->
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="hongyuan&#39;s blog"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+    <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>Learning Http - hongyuan&#39;s blog</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Google Analytics -->
+    
+
+
+</head>
+
+
+<body>
+
+<div class="bg-gradient"></div>
+<div class="bg-pattern"></div>
+
+<!-- Menu -->
+<!--Menu Links and Overlay-->
+<div class="menu-bg">
+    <div class="menu-container">
+        <ul>
+            
+            <li class="menu-item">
+                <a href="/">
+                    Home
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/archives">
+                    Archives
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/about.html">
+                    About
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/tags">
+                    Tags
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/categories">
+                    Categories
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/contact.html">
+                    Contact
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+<!--Hamburger Icon-->
+<nav>
+    <a href="#menu"></a>
+</nav>
+
+<div class="container">
+
+    <!-- Main Content -->
+    <div class="row">
+    <div class="col-sm-12">
+
+        <!--Title and Logo-->
+        <header>
+    <div class="logo">
+        <a href="/"><i class="logo-icon fa fa-cube" aria-hidden="true"></i></a>
+        
+    </div>
+</header>
+
+        <section class="main">
+            
+<div class="post">
+
+    <div class="post-header">
+        <h1 class="title">
+            <a href="/2018/01/05/learning-http/">
+                Learning Http
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2018-01-05</span>
+            
+            
+            
+        </div>
+    </div>
+
+    <div class="content">
+
+        <!-- Gallery -->
+        
+
+        <!-- Post Content -->
+        <h2 id="Request"><a href="#Request" class="headerlink" title="Request"></a>Request</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Request       = Request-Line              </span><br><span class="line">                        *(( general-header        </span><br><span class="line">                         | request-header         </span><br><span class="line">                         | entity-header ) CRLF)  </span><br><span class="line">                        CRLF</span><br><span class="line">                        [ message-body ]</span><br></pre></td></tr></table></figure>
+<h4 id="Request-Line"><a href="#Request-Line" class="headerlink" title="Request-Line"></a>Request-Line</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Request-Line   = Method SP Request-URI SP HTTP-Version CRLF</span><br></pre></td></tr></table></figure>
+<h4 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Method         = &quot;OPTIONS&quot;                </span><br><span class="line">                      | &quot;GET&quot;             </span><br><span class="line">                      | &quot;HEAD&quot;            </span><br><span class="line">                      | &quot;POST&quot;            </span><br><span class="line">                      | &quot;PUT&quot;             </span><br><span class="line">                      | &quot;DELETE&quot;          </span><br><span class="line">                      | &quot;TRACE&quot;           </span><br><span class="line">                      | &quot;CONNECT&quot;         </span><br><span class="line">                      | extension-method</span><br><span class="line">       extension-method = token</span><br></pre></td></tr></table></figure>
+<h4 id="Request-URI"><a href="#Request-URI" class="headerlink" title="Request-URI"></a>Request-URI</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Request-URI    = &quot;*&quot; | absoluteURI | abs_path | authority</span><br></pre></td></tr></table></figure>
+<p>例子：GET <a href="http://www.w3.org/pub/WWW/TheProject.html" target="_blank" rel="noopener">http://www.w3.org/pub/WWW/TheProject.html</a> HTTP/1.1</p>
+<h4 id="Request-Header-Fields"><a href="#Request-Header-Fields" class="headerlink" title="Request Header Fields"></a>Request Header Fields</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">request-header = Accept                   </span><br><span class="line">                     | Accept-Charset     </span><br><span class="line">                     | Accept-Encoding    </span><br><span class="line">                     | Accept-Language    </span><br><span class="line">                     | Authorization      </span><br><span class="line">                     | Expect             </span><br><span class="line">                     | From               </span><br><span class="line">                     | Host               </span><br><span class="line">                     | If-Match           </span><br><span class="line">                      | If-Modified-Since </span><br><span class="line">                     | If-None-Match      </span><br><span class="line">                     | If-Range           </span><br><span class="line">                     | If-Unmodified-Since</span><br><span class="line">                     | Max-Forwards       </span><br><span class="line">                     | Proxy-Authorization</span><br><span class="line">                     | Range              </span><br><span class="line">                     | Referer            </span><br><span class="line">                     | TE                 </span><br><span class="line">                     | User-Agent</span><br></pre></td></tr></table></figure>
+<h2 id="Response"><a href="#Response" class="headerlink" title="Response"></a>Response</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Response      = Status-Line               ;</span><br><span class="line">                       *(( general-header        </span><br><span class="line">                        | response-header        </span><br><span class="line">                        | entity-header ) CRLF)  </span><br><span class="line">                       CRLF</span><br><span class="line">                       [ message-body ]</span><br></pre></td></tr></table></figure>
+<h4 id="Status-Line"><a href="#Status-Line" class="headerlink" title="Status-Line"></a>Status-Line</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Status-Line = HTTP-Version SP Status-Code SP Reason-Phrase CRLF</span><br></pre></td></tr></table></figure>
+<h4 id="Status-Code-and-Reason-Phrase"><a href="#Status-Code-and-Reason-Phrase" class="headerlink" title="Status Code and Reason Phrase"></a>Status Code and Reason Phrase</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">- 1xx: Informational - Request received, continuing process</span><br><span class="line"></span><br><span class="line">- 2xx: Success - The action was successfully received,</span><br><span class="line">understood, and accepted</span><br><span class="line"></span><br><span class="line">- 3xx: Redirection - Further action must be taken in order to</span><br><span class="line">complete the request</span><br><span class="line"></span><br><span class="line">- 4xx: Client Error - The request contains bad syntax or cannot</span><br><span class="line">be fulfilled</span><br><span class="line"></span><br><span class="line">- 5xx: Server Error - The server failed to fulfill an apparently</span><br><span class="line">valid request</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">Status-Code    =</span><br><span class="line">          | &quot;100&quot;  ; Continue</span><br><span class="line">          | &quot;101&quot;  ; Switching Protocols</span><br><span class="line">          | &quot;200&quot;  ; OK</span><br><span class="line">          | &quot;201&quot;  ; Created</span><br><span class="line">          | &quot;202&quot;  ; Accepted</span><br><span class="line">          | &quot;203&quot;  ; Non-Authoritative Information</span><br><span class="line">          | &quot;204&quot;  ; No Content</span><br><span class="line">          | &quot;205&quot;  ; Reset Content</span><br><span class="line">          | &quot;206&quot;  ; Partial Content</span><br><span class="line">          | &quot;300&quot;  ; Multiple Choices</span><br><span class="line">          | &quot;301&quot;  ; Moved Permanently</span><br><span class="line">          | &quot;302&quot;  ; Found</span><br><span class="line">          | &quot;303&quot;  ; See Other</span><br><span class="line">          | &quot;304&quot;  ; Not Modified</span><br><span class="line">          | &quot;305&quot;  ; Use Proxy</span><br><span class="line">          | &quot;307&quot;  ; Temporary Redirect</span><br><span class="line">          | &quot;400&quot;  ; Bad Request</span><br><span class="line">          | &quot;401&quot;  ; Unauthorized</span><br><span class="line">          | &quot;402&quot;  ; Payment Required</span><br><span class="line">          | &quot;403&quot;  ; Forbidden</span><br><span class="line">          | &quot;404&quot;  ; Not Found</span><br><span class="line">          | &quot;405&quot;  ; Method Not Allowed</span><br><span class="line">          | &quot;406&quot;  ; Not Acceptable</span><br><span class="line">          | &quot;407&quot;  ; Proxy Authentication Required</span><br><span class="line">          | &quot;408&quot;  ; Request Time-out</span><br><span class="line">          | &quot;409&quot;  ;: Conflict</span><br><span class="line">          | &quot;410&quot;  ;: Gone</span><br><span class="line">          | &quot;411&quot;  ;: Length Required</span><br><span class="line">          | &quot;412&quot;  ;: Precondition Failed</span><br><span class="line">          | &quot;413&quot;  ;: Request Entity Too Large</span><br><span class="line">          | &quot;414&quot;  ;: Request-URI Too Large</span><br><span class="line">          | &quot;415&quot;  ;: Unsupported Media Type</span><br><span class="line">          | &quot;416&quot;  ;: Requested range not satisfiable</span><br><span class="line">          | &quot;417&quot;  ;: Expectation Failed</span><br><span class="line">          | &quot;500&quot;  ; Internal Server Error</span><br><span class="line">          | &quot;501&quot;  ; Not Implemented</span><br><span class="line">          | &quot;502&quot;  ; Bad Gateway</span><br><span class="line">          | &quot;503&quot;  ; Service Unavailable</span><br><span class="line">          | &quot;504&quot;  ; Gateway Time-out</span><br><span class="line">          | &quot;505&quot;  ; HTTP Version not supported</span><br><span class="line">          | extension-code</span><br></pre></td></tr></table></figure>
+<h4 id="Response-Header-Fields"><a href="#Response-Header-Fields" class="headerlink" title="Response Header Fields"></a>Response Header Fields</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">response-header = Accept-Ranges           </span><br><span class="line">                       | Age              </span><br><span class="line">                       | ETag             </span><br><span class="line">                       | Location         </span><br><span class="line">                       | Proxy-Authenticate</span><br><span class="line">                       | Retry-After      </span><br><span class="line">                       | Server           </span><br><span class="line">                       | Vary             </span><br><span class="line">                       | WWW-Authenticate</span><br></pre></td></tr></table></figure>
+
+    </div>
+
+    
+
+    
+        <div class="post-tags">
+            <i class="fa fa-tags" aria-hidden="true"></i>
+            <a href="/tags/http/">#http</a>
+        </div>
+    
+
+    <!-- Comments -->
+    
+
+</div>
+        </section>
+
+    </div>
+</div>
+
+
+</div>
+
+<!-- Footer -->
+<div class="push"></div>
+
+<footer class="footer-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 footer-about">
+                <h2>About</h2>
+                <p>
+                    This theme was developed by <a href="https://github.com/klugjo">Jonathan Klughertz</a>. The source code is available on Github. Create Websites. Make Magic.
+                </p>
+            </div>
+            
+    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 recent-posts">
+        <h2>Recent Posts</h2>
+        <ul>
+            
+            <li>
+                <a class="footer-post" href="/2018/01/16/hello-world/">Hello World</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2018/01/14/CSV-files/">CSV Files</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2018/01/11/python爬虫较为常用packages/">Python爬虫较为常用packages</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2018/01/08/Regex-syntax/">Regex Syntax</a>
+            </li>
+            
+        </ul>
+    </div>
+
+
+
+            
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ul class="list-inline footer-social-icons">
+                    
+                    <li class="list-inline-item">
+                        <a href="https://github.com/klugjo/hexo-theme-alpha-dust">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-github"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://twitter.com/?lang=en">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-twitter"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-facebook"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://www.instagram.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-instagram"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://dribbble.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-dribbble"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://plus.google.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-google-plus"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://www.behance.net/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-behance"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://500px.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-500px"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="mailto:test@example.com">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-envelope-o"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="\#">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-rss"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="footer-copyright">
+                    @Untitled. All right reserved | Design & Hexo <a href="http://www.codeblocq.com/">Jonathan Klughertz</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- After footer scripts -->
+
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Tween Max -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Custom JavaScript -->
+<script src="/js/main.js"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>

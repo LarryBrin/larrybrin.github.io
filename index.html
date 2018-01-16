@@ -162,8 +162,15 @@
 
     
         <div class="content">
-            <p>Hello, world!</p>
-<p>世界，你好！</p>
+            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
         </div>
     
@@ -175,13 +182,13 @@
 
     <div class="post-header index">
         <h1 class="title">
-            <a href="/2018/01/16/a-little-thought-about-learning-Python/">
-                A Little Thought About Learning Python
+            <a href="/2018/01/14/CSV-files/">
+                CSV Files
             </a>
         </h1>
         <div class="post-info">
             
-                <span class="date">2018-01-16</span>
+                <span class="date">2018-01-14</span>
             
             
             
@@ -190,14 +197,1594 @@
 
     
         <div class="content">
-            <p>自学 Python 已经一年有余，中间有些断续，一直以来如果是跟着 Coursera 上面走或者跟着教 Python 的 English Books 走的话，会跟着上面的练习题编写小程序。如果没有练习题的话就不回去动手找些东西来弄。不是没有想过自己找个生活中的东西来弄，而是一想到现在学的还都是皮毛，变不了这些东西，所以想法一直在脑袋里面盘旋，没有落实。其实，原因有很多，比如编写程序时各种的拼写错误，打字的节奏，容易出现语法的错误等等，这些也是不愿意动手的原因，本质上，是因为对于命令行之类的东西还是不甚熟悉，所以有些畏惧不愿尝试。而前些日子较为系统地学习了 Linux 的常用命令和示例，现在对命令行这种东西又了更大的兴趣，也开始对之熟悉起来，如今在 Mac 上面进行很多操作，比如查找文件，打开文件时，开始用 terminal 操作，感觉确实很不错，尤其是在批量查找、删除某类型的文件时，用 command line 显得尤为方便和快速，command line 能够实现的高级搜索、删除、新建、重命名等操作如果用 Graphic Interface 的话要不就是很难实现或者极为不方便，操作的手法即笨拙又漫长。</p>
-<p>所以，今后操作 Mac 与 Linux 的相关操作要尽可能的用 command line 来实现，这也是一个合格的程序员需要具备的最基本的要求，这也说明了为什么大多数企业招聘 programmer 往往要求具有一定的 Linux 基础的原因。如果对 command line 不熟悉，那么将会极大的影响编程效率。事实上 command line 也可以算作是编程语言的一个分支，就像 regular expression 一样，都极为通用，一旦对 command line 的各种操作变的特别熟悉之后，那么对于进阶其他的快捷键、各种 programmer 常用的软件，比如 Atom、Sublime、Typora、Markdown句法等等就如同信手拈来，像 Mac 的 terminal 与 Windows 的 cmd 等更不在话下。所以，对于 command line 需要彻底掌握，command line、regular expression、anyone programing language、database，只要精通前三者、最后一个，那么一个 programmer 应该算得上是一个高手了吧？</p>
-<p>所以，接下来，对于 command line 和 regular expression 需要放在一起学，另外 regular expression 除了需要与 command line 放在一起学，还需要与 programming language 放在一起来学，尤其是对于文字、符号的处理会变的几位高效。而 database 则需要与 language 放在一起来练习。用 language 处理后的数据需要进行系统的存储，这样可以方便后续的查找和使用，如果仅仅把它们零碎的放在各个文件里面，会显得极为不方面。就像昨天编写的那个用户平台登陆程序一样，如果能够把相关的数据存入 database ，会是一个极好的选择，当然，这个程序如果存储数据不多，也可以把它们简单的放在文件里面。限免贴上昨天编写的很简单的一个小程序：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python3</span></span><br><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">Created on Sun Oct  8 16:26:47 2017</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">@author: larrybrin</span></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"></span><br><span class="line">name_dict = []</span><br><span class="line">passwd_dict = []</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">newusers</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">global</span> name_dict, passwd_dict</span><br><span class="line">    name = input(<span class="string">'Please input the name you choose: '</span>)</span><br><span class="line">    <span class="keyword">while</span> name <span class="keyword">in</span> name_dict:</span><br><span class="line">        input(<span class="string">'The name has been taken by others, input another one: '</span>)</span><br><span class="line">    passwd = input(<span class="string">'Set your passsword: '</span>)</span><br><span class="line">    name_dict.append(name)</span><br><span class="line">    passwd_dict.append(passwd)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">oldusers</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">global</span> name_dict, passwd_dict</span><br><span class="line">    name = input(<span class="string">'Please input your username:'</span>)</span><br><span class="line">    passwd = input(<span class="string">'Please input your passsword: '</span>)</span><br><span class="line">    <span class="keyword">while</span> name <span class="keyword">not</span> <span class="keyword">in</span> name_dict <span class="keyword">or</span> passwd <span class="keyword">not</span> <span class="keyword">in</span> passwd_dict:</span><br><span class="line">        print(<span class="string">'login incorrect: '</span>)</span><br><span class="line">        name = input(<span class="string">'Please input your username:'</span>)</span><br><span class="line">        passwd = input(<span class="string">'Please input your passsword: '</span>)</span><br><span class="line">    print(name, <span class="string">'welcome back '</span>)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">login</span><span class="params">()</span>:</span></span><br><span class="line">    inputs = <span class="keyword">True</span></span><br><span class="line">    options = <span class="string">"""</span></span><br><span class="line"><span class="string">            (N)ew User Login</span></span><br><span class="line"><span class="string">            (O)ld User Login</span></span><br><span class="line"><span class="string">            (E)xit</span></span><br><span class="line"><span class="string">            """</span></span><br><span class="line">    print(options)</span><br><span class="line">    <span class="keyword">while</span> inputs:</span><br><span class="line">        option = input(<span class="string">'Choose one character in the parenthesis: '</span>)</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            <span class="keyword">if</span> option == <span class="string">'N'</span>:</span><br><span class="line">                inputs = <span class="keyword">False</span></span><br><span class="line">                newusers()</span><br><span class="line">            <span class="keyword">elif</span> option == <span class="string">'O'</span>:</span><br><span class="line">                inputs = <span class="keyword">False</span></span><br><span class="line">                oldusers()</span><br><span class="line">            <span class="keyword">elif</span> option == <span class="string">'E'</span>:</span><br><span class="line">                inputs = <span class="keyword">False</span></span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">        <span class="keyword">except</span>:</span><br><span class="line">            print(<span class="string">'Your input is illegal, try again!'</span>)   </span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    login()</span><br></pre></td></tr></table></figure>
-<p>这个程序存在很多漏洞，最大的漏洞有两个：一个是用户信息不能存储，另一个是用户如果选择 olduser 登陆，如果他的信息本身未曾录入到系统数据的话， 那么他在输入时就会变的无限循环，一直提醒重新输入用户名和密码，而不能跳入到新用户的注册进程中。换句话说，这个小程序还有很大的完善空间。</p>
-<p>另外，红远需要注意的是，你的 python 语言基本框架已经搭建完毕，接下来的主要工作是放在用上，需要自己动手想一些需要用编程解决的问题，然后用 python 来解决，如果遇到某个难点，可以进行搜索查找，今后深化 Python  的不能再是拿着一本书从头啃到位，这样做速度既慢而且收效不大。因为现在 Python 的学习基本框架已经搭建完毕，剩下的则是对其进行修修补补。目前最需要解决的问题是，使用 python 解决能够解决的各种问题，一次来达到对 python 语言的进一步熟悉，直至掌握。而现在你对其中的一些基本的 function 和 method 还不甚掌握，唯一能够解决这个问题的途径就是不断地练习，哪里弱，就练习哪里。除此之外，你应该开始着手搭建 database 的框架，理解 Python 第三方库的基本用途，这些是完善 Python 框架的必要工作。</p>
-<p>而现在，除去与编程直接相关的事务，就是与工作相关的事物，要开始写简历啦！尽管不知从何着手，但这件事情不能再拖下去，要把握好时机。</p>
-<p>哦，对了，git 相关的基本操作也需要掌握好。</p>
+            <h3 id="csv-reader-csvfile-dialect-’excel’-fmtparams"><a href="#csv-reader-csvfile-dialect-’excel’-fmtparams" class="headerlink" title="csv.reader(csvfile, dialect=’excel’, *\fmtparams*)"></a><code>csv.reader</code>(<em>csvfile</em>, <em>dialect=’excel’</em>, <em>*\</em>fmtparams*)</h3><p>If <em>csvfile</em> is a file object, it should be opened with <code>newline=&#39;&#39;</code>.</p>
+<p>A short usage example:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> csv</span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'eggs.csv'</span>, newline=<span class="string">''</span>) <span class="keyword">as</span> csvfile:</span><br><span class="line">    spamreader = csv.reader(csvfile, delimiter=<span class="string">' '</span>, quotechar=<span class="string">'|'</span>)</span><br><span class="line">    <span class="keyword">for</span> row <span class="keyword">in</span> spamreader:</span><br><span class="line">        print(<span class="string">', '</span>.join(row))</span><br></pre></td></tr></table></figure>
+<h3 id="csv-writer-csvfile-dialect-’excel’-fmtparams"><a href="#csv-writer-csvfile-dialect-’excel’-fmtparams" class="headerlink" title="csv.writer(csvfile, dialect=’excel’, *\fmtparams*)"></a><code>csv.writer</code>(<em>csvfile</em>, <em>dialect=’excel’</em>, <em>*\</em>fmtparams*)</h3><p>If <em>csvfile</em> is a file object, it should be opened with<code>newline=&#39;&#39;</code></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> csv</span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'eggs.csv'</span>, <span class="string">'w'</span>, newline=<span class="string">''</span>) <span class="keyword">as</span> csvfile:</span><br><span class="line">    spamwriter = csv.writer(csvfile, delimiter=<span class="string">' '</span>,</span><br><span class="line">                            quotechar=<span class="string">'|'</span>, quoting=csv.QUOTE_MINIMAL)</span><br><span class="line">    spamwriter.writerow([<span class="string">'Spam'</span>] * <span class="number">5</span> + [<span class="string">'Baked Beans'</span>])</span><br><span class="line">    spamwriter.writerow([<span class="string">'Spam'</span>, <span class="string">'Lovely Spam'</span>, <span class="string">'Wonderful Spam'</span>])</span><br></pre></td></tr></table></figure>
+
+        </div>
+    
+
+</div>
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
+            <a href="/2018/01/11/python爬虫较为常用packages/">
+                Python爬虫较为常用packages
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2018-01-11</span>
+            
+            
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <h1 id="Python爬虫较为常用的较冷门的Packages"><a href="#Python爬虫较为常用的较冷门的Packages" class="headerlink" title="Python爬虫较为常用的较冷门的Packages"></a>Python爬虫较为常用的较冷门的Packages</h1><h2 id="CacheControl"><a href="#CacheControl" class="headerlink" title="CacheControl"></a>CacheControl</h2><p><a href="https://cachecontrol.readthedocs.io/en/latest/" target="_blank" rel="noopener"><strong>CacheControl</strong></a> is a port of the caching algorithms in <a href="http://code.google.com/p/httplib2/" target="_blank" rel="noopener">httplib2</a> for use with the <a href="http://docs.python-requests.org/" target="_blank" rel="noopener">requests</a> session object.</p>
+<p>It was written because httplib2’s better support for caching is often mitigated by its lack of thread-safety. The same is true of requests in terms of caching.</p>
+
+        </div>
+    
+
+</div>
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
+            <a href="/2018/01/08/Regex-syntax/">
+                Regex Syntax
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2018-01-08</span>
+            
+            
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <p><code>&#39;.&#39;</code></p>
+<p>(Dot.) 表示除换行符意外的所有符号。</p>
+<p><code>&#39;$&#39;</code></p>
+<p>本质上来说，代表换行符，为本行的换行符。</p>
+<p><code>&#39;^&#39;</code></p>
+<p>(Caret.)本质上来说也可以表示换行符，只不过是上一行的换行符。</p>
+<p><code>&#39;?&#39;</code></p>
+<p>表示其前面的字符出现一次或者没有出现。</p>
+<p><code>*?</code>, <code>+?</code>, <code>??</code></p>
+<p>The <code>&#39;*&#39;</code>, <code>&#39;+&#39;</code>, and <code>&#39;?&#39;</code>会匹配尽可能多的匹配想，而<code>*?</code>, <code>+?</code>, <code>??</code>一旦发现匹配项即立即终止匹配。</p>
+<p><code>{m,n}?</code></p>
+<p>同上。</p>
+<p><code>&#39;\&#39;</code></p>
+<p>转义符，消除紧连其后符号的特殊意义，只表示符号本身。</p>
+<p><code>[]</code></p>
+<p>Special characters(except ‘/‘) lose their special meaning inside sets.</p>
+<p>Character classes such as <code>\w</code> or <code>\S</code> (defined below) are also accepted inside a set.</p>
+<p> If the first character of the set is <code>&#39;^&#39;</code>, all the characters that are <em>not</em> in the set will be matched. <code>^</code> has no special meaning if it’s not the first character in the set.</p>
+<p>To match a literal <code>&#39;]&#39;</code> inside a set, precede it with a backslash, or place it at the beginning of the set.</p>
+<p><code>(?aiLmsux)</code></p>
+<p>(<strong>One or more</strong> letters from the set <code>&#39;a&#39;</code>, <code>&#39;i&#39;</code>, <code>&#39;L&#39;</code>, <code>&#39;m&#39;</code>, <code>&#39;s&#39;</code>, <code>&#39;u&#39;</code>, <code>&#39;x&#39;</code>.) </p>
+<p>The group matches the empty string（也就是说可以把空的string也可以匹配进来）; the letters set the corresponding flags: <a href="#re.A"><code>re.A</code></a> (ASCII-only matching), <a href="#re.I"><code>re.I</code></a> (ignore case), <a href="#re.L"><code>re.L</code></a> (locale dependent),<a href="#re.M"><code>re.M</code></a> (multi-line), <a href="#re.S"><code>re.S</code></a> (dot matches all，即包括换行符), and <a href="#re.X"><code>re.X</code></a> (verbose), for the entire regular expression. </p>
+<p> This is useful if you wish to include the <strong>flags</strong>（也就是多个标识） as part of the regular expression, instead of passing <strong>a <em>flag</em></strong> （而不是一个标识）argument to the <a href="#re.compile"><code>re.compile()</code></a> function. Flags should be used first in the expression string.</p>
+<p><code>(?:...)</code></p>
+<p>表示不匹配匹配但不输出冒号后的内容。</p>
+<p><code>(?imsx-imsx:...)</code></p>
+<p><strong>Zero or more letters</strong> from the set <code>&#39;i&#39;</code>, <code>&#39;m&#39;</code>, <code>&#39;s&#39;</code>, <code>&#39;x&#39;</code>, optionally followed by <code>&#39;-&#39;</code> followed by one or more letters from the same set.因为有了冒号，前面可以有也可以没有<code>&#39;i&#39;</code>, <code>&#39;m&#39;</code>, <code>&#39;s&#39;</code>, <code>&#39;x&#39;</code>。</p>
+<p>最终是匹配但不输出的意思。</p>
+<p><code>(?P&lt;name&gt;...)</code></p>
+<p>Similar to regular parentheses, but the substring matched by the group is accessible via the symbolic group name <em>name</em>. （与常规的括号意义相同，只不过匹配的东西可以用唯一标示的名字来指定）。A symbolic group is also a numbered group, just as if the group were not named.（即是说标示也可以用数字来表示）</p>
+<p> If the pattern is <code>(?P&lt;quote&gt;[&#39;&quot;]).*?(?P=quote)</code> (i.e. matching a string quoted with either single or double quotes):</p>
+<table>
+<thead>
+<tr>
+<th>Context of reference to group “quote”</th>
+<th>Ways to reference it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>in the same pattern itself</td>
+<td><code>(?P=quote)</code> (as shown)<code>\1</code></td>
+</tr>
+<tr>
+<td>when processing match object <code>m</code></td>
+<td><code>m.group(&#39;quote&#39;)``m.end(&#39;quote&#39;)</code> (etc.)</td>
+</tr>
+<tr>
+<td>in a string passed to the <code>repl</code> argument of <code>re.sub()</code></td>
+<td><code>\g&lt;quote&gt;``\g&lt;1&gt;``\1</code></td>
+</tr>
+</tbody>
+</table>
+<p><code>(?P=name)</code></p>
+<p>A backreference to a named group（回指）</p>
+<p><code>(?#...)</code></p>
+<p>A comment</p>
+<p><code>(?=...)</code></p>
+<p>Matches if <code>...</code> matches next, but doesn’t consume any of the string. This is called a lookahead assertion.For example, <code>Isaac (?=Asimov)</code> will match <code>&#39;Isaac &#39;</code> only if it’s followed by <code>&#39;Asimov&#39;</code>.也就是说，这里的❓可以表示为占位符，假设等号后的内容紧随❓前的内容，则匹配，否则不匹配。可以称之为<strong>前置假设成立</strong>。</p>
+<p><code>(?!...)</code></p>
+<p>Matches if <code>...</code> doesn’t match next. This is a negative lookahead assertion. For example, <code>Isaac (?!Asimov)</code>will match <code>&#39;Isaac &#39;</code> only if it’s <em>not</em> followed by <code>&#39;Asimov&#39;</code>.（与上述的功能相反），可以称之为<strong>前置建设不成立</strong>。</p>
+<p><code>(?&lt;=...)</code></p>
+<p>Matches if the current position in the string is preceded by a match for <code>...</code> that ends at the current position. This is called a <em>positive lookbehind assertion</em>. <code>(?&lt;=abc)def</code> will find a match in <code>abcdef</code>可以称之为<strong>后置假设成立</strong>。参见<code>(?=...)</code>。The contained pattern must only match strings of some fixed length, meaning that <code>abc</code> or <code>a|b</code> are allowed, but <code>a*</code> and <code>a{3,4}</code> are not.（也就是说等号后的内容必须是固定长度，这一点与参考不同）</p>
+<p><code>(?&lt;!...)</code></p>
+<p>Matches if the current position in the string is not preceded by a match for <code>...</code>. This is called a <em>negative lookbehind assertion</em>.（称之为后置假设不成立）语法同上。</p>
+<p><code>(?(id/name)yes-pattern|no-pattern)</code></p>
+<p>Will try to match with yes-pattern if the group with given id or name exists, and with no-pattern if it doesn’t. no-pattern is optional and can be omitted. For example, <code>(&lt;)?(\w+@\w+(?:\.\w+)+)(?(1)&gt;|$)</code> is a poor email matching pattern, which will match with <code>&#39;&lt;user@host.com&gt;&#39;</code> as well as <code>&#39;user@host.com&#39;</code>, but not with <code>&#39;&lt;user@host.com&#39;</code> nor <code>&#39;user@host.com&gt;&#39;</code>.</p>
+<hr>
+<p>The special sequences consist of <code>&#39;\&#39;</code> and a character from the list below. If the ordinary character is not an ASCII digit or an ASCII letter, then the resulting RE will match the second character. For example, <code>\$</code> matches the character <code>&#39;$&#39;</code>.</p>
+<p>即是说除了下面列举出来的，‘/’均为转义的意思（放在[]内的除外）</p>
+<p><code>\number</code></p>
+<p>Matches the contents of the group of the same number.</p>
+<p><code>\A</code></p>
+<p>Matches only at the <strong>start of the string</strong>.（可以表示为string前的空格），与’\Z’相反</p>
+<p><code>\b</code></p>
+<p>Matches the empty string, but only at the beginning or end of a word. A word is defined as a sequence of Unicode alphanumeric or underscore characters, so the end of a word is indicated by whitespace or a non-alphanumeric, non-underscore Unicode character. Note that formally, <code>\b</code> is defined as the boundary between a <code>\w</code> and a <code>\W</code> character (or vice versa), or between <code>\w</code> and the beginning/end of the string. This means that <code>r&#39;\bfoo\b&#39;</code> matches <code>&#39;foo&#39;</code>, <code>&#39;foo.&#39;</code>, <code>&#39;(foo)&#39;</code>, <code>&#39;bar foo baz&#39;</code> but not <code>&#39;foobar&#39;</code> or <code>&#39;foo3&#39;</code>.<strong>也就是说’\b’表示的是除去字母、整数、连字符、一个空格的集合中的单个元素</strong></p>
+<p><code>\B</code></p>
+<p>Matches the empty string, but only when it is <em>not</em> at the beginning or end of a word. This means that <code>r&#39;py\B&#39;</code>matches <code>&#39;python&#39;</code>, <code>&#39;py3&#39;</code>, <code>&#39;py2&#39;</code>, but not <code>&#39;py&#39;</code>, <code>&#39;py.&#39;</code>, or <code>&#39;py!&#39;</code>. <code>\B</code> is just the opposite of <code>\b</code>, 也就是说’\B’表示的是字母、整数、连字符、一个空格的集合中的单个元素。</p>
+<p><code>\d</code></p>
+<p>基本上可以认为匹配  <code>[0-9]</code>.</p>
+<p><code>\D</code></p>
+<p>与\d相反。</p>
+<p><code>\s</code></p>
+<p>基本上可以认为只匹配无字符输出的符号，如空格、换行、纵向制表符、横向制表符 ，即<code>[ \t\n\r\f\v]</code>。</p>
+<p><code>\S</code></p>
+<p>与上述相反<code>[^ \t\n\r\f\v]</code> 。</p>
+<p><code>\w</code></p>
+<p>基本可以理解为匹配：[a-zA-Z0-9_]。同’\b’,只是‘\b’用于界定，而’\w’用来匹配</p>
+<p><code>\W</code></p>
+<p>与上述相反：<code>[^a-zA-Z0-9_]</code> 。同’\B’,只是‘\B’用于界定，而’\W’用来匹配</p>
+<p><code>\Z</code></p>
+<p>Matches only at the end of the string. 与‘\A’相反。</p>
+<hr>
+<h2 id="Module-Contents"><a href="#Module-Contents" class="headerlink" title="Module Contents"></a>Module Contents</h2><p><code>re.compile(*pattern*, *flags=0*)</code></p>
+<p>The sequence</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">prog = re.compile(pattern)</span><br><span class="line">result = prog.match(string)</span><br></pre></td></tr></table></figure>
+<p>is equivalent to</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">result = re.match(pattern, string)</span><br></pre></td></tr></table></figure>
+<p><code>re.A</code></p>
+<p><code>re.ASCII</code></p>
+<p>Make <code>\w</code>, <code>\W</code>, <code>\b</code>, <code>\B</code>, <code>\d</code>, <code>\D</code>, <code>\s</code> and <code>\S</code> perform ASCII-only matching.</p>
+<p><code>re.DEBUG</code></p>
+<p>Display debug information about compiled expression.</p>
+<p><code>re.I</code></p>
+<p><code>re.IGNORECASE</code></p>
+<p><code>re.L</code></p>
+<p><code>re.LOCALE</code></p>
+<p><code>re.M</code></p>
+<p><code>re.MULTILINE</code></p>
+<p>When specified, the pattern character <code>&#39;^&#39;</code> matches at the beginning of the string and at the beginning of each line. and the pattern character <code>&#39;$&#39;</code> matches at the end of the string and at the end of each line.</p>
+<p><code>re.S</code></p>
+<p><code>re.DOTALL</code></p>
+<p>Make the <code>&#39;.&#39;</code> special character match any character at all, including a newline; without this <strong>flag</strong>, <code>&#39;.&#39;</code> will match anything <em>except</em> a newline.</p>
+<p><code>re.X</code></p>
+<p><code>re.VERBOSE</code></p>
+<p><code>re.search</code>(<em>pattern</em>, <em>string</em>, <em>flags=0</em>)</p>
+<p>Scan through <em>string</em> looking for the first location where the regular expression <em>pattern</em> produces a match, and return a corresponding <a href="#match-objects">match object</a>.</p>
+<p><code>re.match</code>(<em>pattern</em>, <em>string</em>, <em>flags=0</em>)</p>
+<p>If zero or more characters at the beginning of <em>string</em> match the regular expression <em>pattern</em>, return a corresponding <a href="#match-objects">match object</a>.</p>
+<p><code>re.fullmatch</code>(<em>pattern</em>, <em>string</em>, <em>flags=0</em>)</p>
+<p>If the whole <em>string</em> matches the regular expression <em>pattern</em>, return a corresponding <a href="#match-objects">match object</a>.</p>
+<p><code>re.split</code>(<em>pattern</em>, <em>string</em>, <em>maxsplit=0</em>, <em>flags=0</em>)</p>
+<p>Split <em>string</em> by the occurrences of <em>pattern</em>. </p>
+<p><code>re.findall</code>(<em>pattern</em>, <em>string</em>, <em>flags=0</em>)</p>
+<p>Return all non-overlapping matches of <em>pattern</em> in <em>string</em>, as a list of strings.</p>
+<p><code>re.finditer</code>(<em>pattern</em>, <em>string</em>, <em>flags=0</em>)</p>
+<p>Return an <a href="../glossary.html#term-iterator">iterator</a> yielding <a href="#match-objects">match objects</a> over all non-overlapping matches for the RE <em>pattern</em> in <em>string</em>.</p>
+<p><code>re.purge</code>()</p>
+<p>Clear the regular expression cache.</p>
+<h2 id="Regular-Expression-Objects"><a href="#Regular-Expression-Objects" class="headerlink" title="Regular Expression Objects"></a>Regular Expression Objects</h2><p><code>regex.search</code>(<em>string</em>[, <em>pos</em>[, <em>endpos</em>]]) </p>
+<p><code>regex.match</code>(<em>string</em>[, <em>pos</em>[, <em>endpos</em>]]) </p>
+<p><code>regex.fullmatch</code>(<em>string</em>[, <em>pos</em>[, <em>endpos</em>]]) </p>
+<p><code>regex.split</code>(<em>string</em>, <em>maxsplit=0</em>) </p>
+<p>Identical to the split() function, using the compiled pattern.</p>
+<p><code>regex.findall</code>(<em>string</em>[, <em>pos</em>[, <em>endpos</em>]]) </p>
+<p>Similar to the <a href="#re.findall"><code>findall()</code></a> function, using the compiled pattern</p>
+<p><code>regex.finditer</code>(<em>string</em>[, <em>pos</em>[, <em>endpos</em>]]) </p>
+<p>Similar to the <a href="#re.finditer"><code>finditer()</code></a> function, using the compiled pattern</p>
+<p><code>regex.pattern</code> </p>
+<p>The pattern string from which the RE object was compiled.</p>
+<h2 id="Match-Objects"><a href="#Match-Objects" class="headerlink" title="Match Objects"></a>Match Objects</h2><p><code>match.expand</code>(<em>template</em>) </p>
+<p><code>match.group</code>([<em>group1</em>, <em>…</em>]) </p>
+<p>Returns one or more subgroups of the match. </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>m = re.match(<span class="string">r"(\w+) (\w+)"</span>, <span class="string">"Isaac Newton, physicist"</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>m.group(<span class="number">0</span>)       <span class="comment"># The entire match</span></span><br><span class="line"><span class="string">'Isaac Newton'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>m.group(<span class="number">1</span>)       <span class="comment"># The first parenthesized subgroup.</span></span><br><span class="line"><span class="string">'Isaac'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>m.group(<span class="number">2</span>)       <span class="comment"># The second parenthesized subgroup.</span></span><br><span class="line"><span class="string">'Newton'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>m.group(<span class="number">1</span>, <span class="number">2</span>)    <span class="comment"># Multiple arguments give us a tuple.</span></span><br><span class="line">(<span class="string">'Isaac'</span>, <span class="string">'Newton'</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>m = re.match(<span class="string">r"(?P&lt;first_name&gt;\w+) (?P&lt;last_name&gt;\w+)"</span>, <span class="string">"Malcolm Reynolds"</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>m.group(<span class="string">'first_name'</span>)</span><br><span class="line"><span class="string">'Malcolm'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>m.group(<span class="string">'last_name'</span>)</span><br><span class="line"><span class="string">'Reynolds'</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>m.group(<span class="number">1</span>)</span><br><span class="line"><span class="string">'Malcolm'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>m.group(<span class="number">2</span>)</span><br><span class="line"><span class="string">'Reynolds'</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>m = re.match(<span class="string">r"(..)+"</span>, <span class="string">"a1b2c3"</span>)  <span class="comment"># Matches 3 times.贪婪型，匹配三个字符。</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>m.group(<span class="number">1</span>)                        <span class="comment"># Returns only the last match.</span></span><br><span class="line"><span class="string">'c3'</span></span><br></pre></td></tr></table></figure>
+<p><code>match.__getitem__</code>(<em>g</em>) </p>
+<p>This is identical to <code>m.group(g)</code>. </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>m = re.match(<span class="string">r"(\w+) (\w+)"</span>, <span class="string">"Isaac Newton, physicist"</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>m[<span class="number">0</span>]       <span class="comment"># The entire match</span></span><br><span class="line"><span class="string">'Isaac Newton'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>m[<span class="number">1</span>]       <span class="comment"># The first parenthesized subgroup.</span></span><br><span class="line"><span class="string">'Isaac'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>m[<span class="number">2</span>]       <span class="comment"># The second parenthesized subgroup.</span></span><br><span class="line"><span class="string">'Newton'</span></span><br></pre></td></tr></table></figure>
+<p><code>match.groups</code>(<strong><em>default=None</em></strong>) </p>
+<p>Return a tuple containing all the subgroups of the match, from 1 up to however many groups are in the pattern. </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>m = re.match(<span class="string">r"(\d+)\.(\d+)"</span>, <span class="string">"24.1632"</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>m.groups()</span><br><span class="line">(<span class="string">'24'</span>, <span class="string">'1632'</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>m = re.match(<span class="string">r"(\d+)\.?(\d+)?"</span>, <span class="string">"24"</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>m.groups()      <span class="comment"># Second group defaults to None.</span></span><br><span class="line">(<span class="string">'24'</span>, <span class="keyword">None</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>m.groups(<span class="string">'0'</span>)   <span class="comment"># Now, the second group defaults to '0'.</span></span><br><span class="line">(<span class="string">'24'</span>, <span class="string">'0'</span>)</span><br></pre></td></tr></table></figure>
+<p><code>match.groupdict</code>(<em>default=None</em>) </p>
+<p>Return a dictionary containing all the <em>named</em> subgroups of the match, keyed by the subgroup name. </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>m = re.match(<span class="string">r"(?P&lt;first_name&gt;\w+) (?P&lt;last_name&gt;\w+)"</span>, <span class="string">"Malcolm Reynolds"</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>m.groupdict()</span><br><span class="line">&#123;<span class="string">'first_name'</span>: <span class="string">'Malcolm'</span>, <span class="string">'last_name'</span>: <span class="string">'Reynolds'</span>&#125;</span><br></pre></td></tr></table></figure>
+<p><code>match.start</code>([<em>group</em>])</p>
+<p><code>match.end</code>([<em>group</em>]) </p>
+<p>Return the indices of the start and end of the substring matched by <em>group</em>; <em>group</em> defaults to zero (meaning the whole matched substring). Return <code>-1</code> if <em>group</em> exists but did not contribute to the match.</p>
+<p><code>match.span</code>([<em>group</em>]) </p>
+<p>For a match <em>m</em>, return the 2-tuple <code>(m.start(group), m.end(group))</code>. </p>
+<p><code>match.pos</code> </p>
+<p>The value of <em>pos</em> which was passed to the <a href="#re.regex.search"><code>search()</code></a> or <a href="#re.regex.match"><code>match()</code></a> method of a <a href="#re-objects">regex object</a>. </p>
+<p><code>match.endpos</code> </p>
+<p><code>match.lastindex</code> </p>
+<p><code>match.lastgroup</code> </p>
+<p><code>match.re</code> </p>
+<p>The regular expression object whose match() or search() method produced this match instance.</p>
+<p><code>match.string</code> </p>
+<p>The string passed to match() or search().</p>
+
+        </div>
+    
+
+</div>
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
+            <a href="/2018/01/08/String-format-syntax/">
+                String Format Syntax
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2018-01-08</span>
+            
+            
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">replacement_field ::=  “&#123;” [field_name] [“!” conversion] [“:” format_spec] “&#125;”</span><br><span class="line">field_name        ::=  arg_name (“.” attribute_name | “[” element_index “]”)*</span><br><span class="line">arg_name          ::=  [identifier | integer]</span><br><span class="line">attribute_name    ::=  identifier</span><br><span class="line">element_index     ::=  integer | index_string</span><br><span class="line">index_string      ::=  &lt;any source character <span class="keyword">except</span> “]”&gt; +</span><br><span class="line">conversion        ::=  “r” | “s” | “a”</span><br><span class="line">format_spec       ::=  &lt;described <span class="keyword">in</span> the next section&gt;</span><br></pre></td></tr></table></figure>
+<p><em>field_name</em> that specifies the object whose value is to be formatted and inserted into the output instead of the replacement field. The <em>field_name</em> is optionally followed by a  <em>conversion</em> field, which is preceded by an exclamation point <code>&#39;!&#39;</code>, and a <em>format_spec</em>, which is preceded by a colon <code>&#39;:&#39;</code>. They are all optional.</p>
+<p>Three conversion flags are currently supported: <code>&#39;!s&#39;</code> which calls <a href="stdtypes.html#str"><code>str()</code></a> on the value, <code>&#39;!r&#39;</code> which calls <a href="functions.html#repr"><code>repr()</code></a> and <code>&#39;!a&#39;</code> which calls <a href="functions.html#ascii"><code>ascii()</code></a>.目的是进行类型转换。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">format_spec     ::=  [[fill]align][sign][<span class="comment">#][0][width][grouping_option][.precision][type]</span></span><br><span class="line">fill            ::=  &lt;any character&gt;</span><br><span class="line">align           ::=  “&lt;” | “&gt;” | “=” | “^”</span><br><span class="line">sign            ::=  “+” | “-” | ” “</span><br><span class="line">width           ::=  integer</span><br><span class="line">grouping_option ::=  “_” | “,”</span><br><span class="line">precision       ::=  integer</span><br><span class="line">type            ::=  “b” | “c” | “d” | “e” | “E” | “f” | “F” | “g” | “G” | “n” | “o” | “s” | “x” |</span><br></pre></td></tr></table></figure>
+<p>The meaning of the various <strong>align</strong> options is as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&#39;&lt;&#39;</code></td>
+<td>左对齐，除数字外，对大多数对象默认</td>
+</tr>
+<tr>
+<td><code>&#39;&gt;&#39;</code></td>
+<td>右对齐，对数字默认</td>
+</tr>
+<tr>
+<td><code>&#39;=&#39;</code></td>
+<td>用等号之后的符号（不指定的话默认为‘0’）来填补数字正负号之后和数字之前的空格（此符号只适用于数字，比如 +000000120）</td>
+</tr>
+<tr>
+<td><code>&#39;^&#39;</code></td>
+<td>居中</td>
+</tr>
+</tbody>
+</table>
+<p>The <strong><em>sign</em></strong> option is only valid for number types, and can be one of the following:</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&#39;+&#39;</code></td>
+<td>正负数均需要有正负号表示</td>
+</tr>
+<tr>
+<td><code>&#39;-&#39;</code></td>
+<td>如果不是负数则无需添加前置符号（默认）</td>
+</tr>
+<tr>
+<td>space</td>
+<td>表示正数的前面加空格，负数的前面加负号</td>
+</tr>
+</tbody>
+</table>
+<p>The <code>&#39;#&#39;</code> option  is only valid for integer, float, complex and Decimal types. For integers, when binary, octal, or hexadecimal output is used, this option adds the prefix respective ‘0b’, ‘0o’, or ‘0x’ to the output value.<code>也就是说，对于二进制、八进制、十六进制的数字打印出来时会在前面加上对应的进制类型</code>  。For floats, complex and Decimal the alternate form causes the result of the conversion to always contain a decimal-point character, even if no digits follow it.<code>换句话说就是强制添加小数点，无论是否有小数</code>。</p>
+<p>The <code>&#39;,&#39;</code> option signals the use of a comma for a thousands separator.也就是千位分隔符。</p>
+<p>The <code>&#39;_&#39;</code> option signals the use of an underscore for a thousands separator.类似于千位分隔符，不过将逗号换为了连字符。有其他功能，但不常用。</p>
+<p><strong><em>width</em></strong> is a decimal integer defining the minimum field width. If not specified, then the field width will be determined by the content.</p>
+<p>The <strong><em>precision</em></strong> is a decimal number indicating how many digits should be displayed after the decimal point for a floating point value.用小数点后的数字表示小数点后的精度。</p>
+<hr>
+<p>The <strong><em>type</em></strong> determines how the data should be presented.</p>
+<p>The available <code>string</code> presentation types are:</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&#39;s&#39;</code></td>
+<td>String format. This is the default type for strings and may be omitted.</td>
+</tr>
+<tr>
+<td>None</td>
+<td>The same as <code>&#39;s&#39;</code>.</td>
+</tr>
+</tbody>
+</table>
+<p> The available <code>integer</code> presentation types are:</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&#39;b&#39;</code></td>
+<td>Binary format. Outputs the number in base 2.</td>
+</tr>
+<tr>
+<td><code>&#39;c&#39;</code></td>
+<td>Character. Converts the integer to the corresponding unicode character before printing.</td>
+</tr>
+<tr>
+<td><code>&#39;d&#39;</code></td>
+<td>Decimal Integer. Outputs the number in base 10.</td>
+</tr>
+<tr>
+<td><code>&#39;o&#39;</code></td>
+<td>Octal format. Outputs the number in base 8.</td>
+</tr>
+<tr>
+<td><code>&#39;x&#39;</code></td>
+<td>Hex format. Outputs the number in base 16, using lower- case letters for the digits above 9.</td>
+</tr>
+<tr>
+<td><code>&#39;X&#39;</code></td>
+<td>Hex format. Outputs the number in base 16, using upper- case letters for the digits above 9.</td>
+</tr>
+<tr>
+<td><code>&#39;n&#39;</code></td>
+<td>Number. This is the same as <code>&#39;d&#39;</code>, except that it uses the current locale setting to insert the appropriate number separator characters.</td>
+</tr>
+<tr>
+<td>None</td>
+<td>The same as <code>&#39;d&#39;</code>.</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<p>The available presentation types for <code>floating point and decimal values</code> are:</p>
+<table>
+<thead>
+<tr>
+<th><code>&#39;e&#39;</code></th>
+<th>Exponent notation. Prints the number in scientific notation using the letter ‘e’ to indicate the exponent. The default precision is <code>6</code>.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&#39;E&#39;</code></td>
+<td>Exponent notation. Same as <code>&#39;e&#39;</code> except it uses an upper case ‘E’ as the separator character.</td>
+</tr>
+<tr>
+<td><code>&#39;f&#39;</code></td>
+<td>Fixed point. Displays the number as a fixed-point number. The default precision is <code>6</code>.</td>
+</tr>
+<tr>
+<td><code>&#39;F&#39;</code></td>
+<td>Fixed point. Same as <code>&#39;f&#39;</code>, but converts <code>nan</code> to <code>NAN</code> and <code>inf</code> to <code>INF</code>.</td>
+</tr>
+<tr>
+<td><code>&#39;g&#39;</code></td>
+<td>General format. For a given precision <code>p &gt;= 1</code>, this rounds the number to <code>p</code> significant digits and then formats the result in either fixed-point format or in scientific notation, depending on its magnitude.The precise rules are as follows: suppose that the result formatted with presentation type <code>&#39;e&#39;</code> and precision <code>p-1</code> would have exponent <code>exp</code>. Then if <code>-4 &lt;= exp &lt; p</code>, the number is formatted with presentation type <code>&#39;f&#39;</code> and precision <code>p-1-exp</code>. Otherwise, the number is formatted with presentation type <code>&#39;e&#39;</code> and precision <code>p-1</code>. In both cases insignificant trailing zeros are removed from the significand, and the decimal point is also removed if there are no remaining digits following it.Positive and negative infinity, positive and negative zero, and nans, are formatted as <code>inf</code>, <code>-inf</code>, <code>0</code>, <code>-0</code> and <code>nan</code> respectively, regardless of the precision.A precision of <code>0</code> is treated as equivalent to a precision of <code>1</code>. The default precision is <code>6</code>.</td>
+</tr>
+<tr>
+<td><code>&#39;G&#39;</code></td>
+<td>General format. Same as <code>&#39;g&#39;</code> except switches to <code>&#39;E&#39;</code> if the number gets too large. The representations of infinity and NaN are uppercased, too.</td>
+</tr>
+<tr>
+<td><code>&#39;n&#39;</code></td>
+<td>Number. This is the same as <code>&#39;g&#39;</code>, except that it uses the current locale setting to insert the appropriate number separator characters.</td>
+</tr>
+<tr>
+<td><code>&#39;%&#39;</code></td>
+<td>Percentage. Multiplies the number by 100 and displays in fixed (<code>&#39;f&#39;</code>) format, followed by a percent sign.</td>
+</tr>
+<tr>
+<td>None</td>
+<td>Similar to <code>&#39;g&#39;</code>, except that fixed-point notation, when used, has at least one digit past the decimal point. The default precision is as high as needed to represent the particular value. The overall effect is to match the output of <a href="stdtypes.html#str"><code>str()</code></a> as altered by the other format modifiers.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="Format-examples"><a href="#Format-examples" class="headerlink" title="Format examples"></a>Format examples</h3><p>This section contains examples of the <a href="stdtypes.html#str.format"><code>str.format()</code></a> syntax and comparison with the old <code>%</code>-formatting.</p>
+<p>In most of the cases the syntax is similar to the old <code>%</code>-formatting, with the addition of the <code>{}</code> and with <code>:</code> used instead of <code>%</code>. For example, <code>&#39;%03.2f&#39;</code> can be translated to <code>&#39;{:03.2f}&#39;</code>.</p>
+<p>The new format syntax also supports new and different options, shown in the follow examples.</p>
+<p>Accessing arguments by position:</p>
+<p>>&gt;&gt;</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">'&#123;0&#125;, &#123;1&#125;, &#123;2&#125;'</span>.format(<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>)</span><br><span class="line"><span class="string">'a, b, c'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">'&#123;&#125;, &#123;&#125;, &#123;&#125;'</span>.format(<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>)  <span class="comment"># 3.1+ only</span></span><br><span class="line"><span class="string">'a, b, c'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">'&#123;2&#125;, &#123;1&#125;, &#123;0&#125;'</span>.format(<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>)</span><br><span class="line"><span class="string">'c, b, a'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">'&#123;2&#125;, &#123;1&#125;, &#123;0&#125;'</span>.format(*<span class="string">'abc'</span>)      <span class="comment"># unpacking argument sequence（*号相当于list）</span></span><br><span class="line"><span class="string">'c, b, a'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">'&#123;0&#125;&#123;1&#125;&#123;0&#125;'</span>.format(<span class="string">'abra'</span>, <span class="string">'cad'</span>)   <span class="comment"># arguments' indices can be repeated</span></span><br><span class="line"><span class="string">'abracadabra'</span></span><br></pre></td></tr></table></figure>
+<p>Accessing arguments by name:</p>
+<p>>&gt;&gt;</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">'Coordinates: &#123;latitude&#125;, &#123;longitude&#125;'</span>.format(latitude=<span class="string">'37.24N'</span>, longitude=<span class="string">'-115.81W'</span>)</span><br><span class="line"><span class="string">'Coordinates: 37.24N, -115.81W'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>coord = &#123;<span class="string">'latitude'</span>: <span class="string">'37.24N'</span>, <span class="string">'longitude'</span>: <span class="string">'-115.81W'</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">'Coordinates: &#123;latitude&#125;, &#123;longitude&#125;'</span>.format(**coord)</span><br><span class="line"><span class="string">'Coordinates: 37.24N, -115.81W'</span></span><br></pre></td></tr></table></figure>
+<p>Accessing arguments’ attributes:</p>
+<p>>&gt;&gt;</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>c = <span class="number">3</span><span class="number">-5j</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>(<span class="string">'The complex number &#123;0&#125; is formed from the real part &#123;0.real&#125; '</span></span><br><span class="line"><span class="meta">... </span> <span class="string">'and the imaginary part &#123;0.imag&#125;.'</span>).format(c)</span><br><span class="line"><span class="string">'The complex number (3-5j) is formed from the real part 3.0 and the imaginary part -5.0.'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="class"><span class="keyword">class</span> <span class="title">Point</span>:</span></span><br><span class="line"><span class="meta">... </span>    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, x, y)</span>:</span></span><br><span class="line"><span class="meta">... </span>        self.x, self.y = x, y</span><br><span class="line"><span class="meta">... </span>    <span class="function"><span class="keyword">def</span> <span class="title">__str__</span><span class="params">(self)</span>:</span></span><br><span class="line"><span class="meta">... </span>        <span class="keyword">return</span> <span class="string">'Point(&#123;self.x&#125;, &#123;self.y&#125;)'</span>.format(self=self)</span><br><span class="line">...</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>str(Point(<span class="number">4</span>, <span class="number">2</span>))</span><br><span class="line"><span class="string">'Point(4, 2)'</span></span><br></pre></td></tr></table></figure>
+<p>Accessing arguments’ items:</p>
+<p>>&gt;&gt;</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>coord = (<span class="number">3</span>, <span class="number">5</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">'X: &#123;0[0]&#125;;  Y: &#123;0[1]&#125;'</span>.format(coord)</span><br><span class="line"><span class="string">'X: 3;  Y: 5'</span></span><br></pre></td></tr></table></figure>
+<p>Replacing <code>%s</code> and <code>%r</code>:</p>
+<p>>&gt;&gt;</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">"repr() shows quotes: &#123;!r&#125;; str() doesn't: &#123;!s&#125;"</span>.format(<span class="string">'test1'</span>, <span class="string">'test2'</span>)</span><br><span class="line"><span class="string">"repr() shows quotes: 'test1'; str() doesn't: test2"</span></span><br></pre></td></tr></table></figure>
+<p>Aligning the text and specifying a width:</p>
+<p>>&gt;&gt;</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">'&#123;:&lt;30&#125;'</span>.format(<span class="string">'left aligned'</span>)</span><br><span class="line"><span class="string">'left aligned                  '</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">'&#123;:&gt;30&#125;'</span>.format(<span class="string">'right aligned'</span>)</span><br><span class="line"><span class="string">'                 right aligned'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">'&#123;:^30&#125;'</span>.format(<span class="string">'centered'</span>)</span><br><span class="line"><span class="string">'           centered           '</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">'&#123;:*^30&#125;'</span>.format(<span class="string">'centered'</span>)  <span class="comment"># use '*' as a fill char</span></span><br><span class="line"><span class="string">'***********centered***********'</span></span><br></pre></td></tr></table></figure>
+<p>Replacing <code>%+f</code>, <code>%-f</code>, and <code>% f</code> and specifying a sign:</p>
+<p>>&gt;&gt;</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">'&#123;:+f&#125;; &#123;:+f&#125;'</span>.format(<span class="number">3.14</span>, <span class="number">-3.14</span>)  <span class="comment"># show it always</span></span><br><span class="line"><span class="string">'+3.140000; -3.140000'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">'&#123;: f&#125;; &#123;: f&#125;'</span>.format(<span class="number">3.14</span>, <span class="number">-3.14</span>)  <span class="comment"># show a space for positive numbers</span></span><br><span class="line"><span class="string">' 3.140000; -3.140000'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">'&#123;:-f&#125;; &#123;:-f&#125;'</span>.format(<span class="number">3.14</span>, <span class="number">-3.14</span>)  <span class="comment"># show only the minus -- same as '&#123;:f&#125;; &#123;:f&#125;'</span></span><br><span class="line"><span class="string">'3.140000; -3.140000'</span></span><br></pre></td></tr></table></figure>
+<p>Replacing <code>%x</code> and <code>%o</code> and converting the value to different bases:</p>
+<p>>&gt;&gt;</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="comment"># format also supports binary numbers</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">"int: &#123;0:d&#125;;  hex: &#123;0:x&#125;;  oct: &#123;0:o&#125;;  bin: &#123;0:b&#125;"</span>.format(<span class="number">42</span>)</span><br><span class="line"><span class="string">'int: 42;  hex: 2a;  oct: 52;  bin: 101010'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="comment"># with 0x, 0o, or 0b as prefix:</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">"int: &#123;0:d&#125;;  hex: &#123;0:#x&#125;;  oct: &#123;0:#o&#125;;  bin: &#123;0:#b&#125;"</span>.format(<span class="number">42</span>)</span><br><span class="line"><span class="string">'int: 42;  hex: 0x2a;  oct: 0o52;  bin: 0b101010'</span></span><br></pre></td></tr></table></figure>
+<p>Using the comma as a thousands separator:</p>
+<p>>&gt;&gt;</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">'&#123;:,&#125;'</span>.format(<span class="number">1234567890</span>)</span><br><span class="line"><span class="string">'1,234,567,890'</span></span><br></pre></td></tr></table></figure>
+<p>Expressing a percentage:</p>
+<p>>&gt;&gt;</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>points = <span class="number">19</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>total = <span class="number">22</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">'Correct answers: &#123;:.2%&#125;'</span>.format(points/total)</span><br><span class="line"><span class="string">'Correct answers: 86.36%'</span></span><br></pre></td></tr></table></figure>
+<p>Using type-specific formatting:</p>
+<p>>&gt;&gt;</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> datetime</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>d = datetime.datetime(<span class="number">2010</span>, <span class="number">7</span>, <span class="number">4</span>, <span class="number">12</span>, <span class="number">15</span>, <span class="number">58</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">'&#123;:%Y-%m-%d %H:%M:%S&#125;'</span>.format(d)</span><br><span class="line"><span class="string">'2010-07-04 12:15:58'</span></span><br></pre></td></tr></table></figure>
+<p>Nesting arguments and more complex examples:</p>
+<p>>&gt;&gt;</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">for</span> align, text <span class="keyword">in</span> zip(<span class="string">'&lt;^&gt;'</span>, [<span class="string">'left'</span>, <span class="string">'center'</span>, <span class="string">'right'</span>]):</span><br><span class="line"><span class="meta">... </span>    <span class="string">'&#123;0:&#123;fill&#125;&#123;align&#125;16&#125;'</span>.format(text, fill=align, align=align)</span><br><span class="line">...</span><br><span class="line"><span class="string">'left&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;'</span></span><br><span class="line"><span class="string">'^^^^^center^^^^^'</span></span><br><span class="line"><span class="string">'&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;right'</span></span><br><span class="line">&gt;&gt;&gt;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>octets = [<span class="number">192</span>, <span class="number">168</span>, <span class="number">0</span>, <span class="number">1</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">'&#123;:02X&#125;&#123;:02X&#125;&#123;:02X&#125;&#123;:02X&#125;'</span>.format(*octets)</span><br><span class="line"><span class="string">'C0A80001'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>int(_, <span class="number">16</span>)</span><br><span class="line"><span class="number">3232235521</span></span><br><span class="line">&gt;&gt;&gt;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>width = <span class="number">5</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">for</span> num <span class="keyword">in</span> range(<span class="number">5</span>,<span class="number">12</span>): </span><br><span class="line"><span class="meta">... </span>    <span class="keyword">for</span> base <span class="keyword">in</span> <span class="string">'dXob'</span>:</span><br><span class="line"><span class="meta">... </span>        print(<span class="string">'&#123;0:&#123;width&#125;&#123;base&#125;&#125;'</span>.format(num, base=base, width=width), end=<span class="string">' '</span>)</span><br><span class="line"><span class="meta">... </span>    print()</span><br><span class="line">...</span><br><span class="line">    <span class="number">5</span>     <span class="number">5</span>     <span class="number">5</span>   <span class="number">101</span></span><br><span class="line">    <span class="number">6</span>     <span class="number">6</span>     <span class="number">6</span>   <span class="number">110</span></span><br><span class="line">    <span class="number">7</span>     <span class="number">7</span>     <span class="number">7</span>   <span class="number">111</span></span><br><span class="line">    <span class="number">8</span>     <span class="number">8</span>    <span class="number">10</span>  <span class="number">1000</span></span><br><span class="line">    <span class="number">9</span>     <span class="number">9</span>    <span class="number">11</span>  <span class="number">1001</span></span><br><span class="line">   <span class="number">10</span>     A    <span class="number">12</span>  <span class="number">1010</span></span><br><span class="line">   <span class="number">11</span>     B    <span class="number">13</span>  <span class="number">1011</span></span><br></pre></td></tr></table></figure>
+        </div>
+    
+
+</div>
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
+            <a href="/2018/01/05/learning-http/">
+                Learning Http
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2018-01-05</span>
+            
+            
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <h2 id="Request"><a href="#Request" class="headerlink" title="Request"></a>Request</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Request       = Request-Line              </span><br><span class="line">                        *(( general-header        </span><br><span class="line">                         | request-header         </span><br><span class="line">                         | entity-header ) CRLF)  </span><br><span class="line">                        CRLF</span><br><span class="line">                        [ message-body ]</span><br></pre></td></tr></table></figure>
+<h4 id="Request-Line"><a href="#Request-Line" class="headerlink" title="Request-Line"></a>Request-Line</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Request-Line   = Method SP Request-URI SP HTTP-Version CRLF</span><br></pre></td></tr></table></figure>
+<h4 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Method         = &quot;OPTIONS&quot;                </span><br><span class="line">                      | &quot;GET&quot;             </span><br><span class="line">                      | &quot;HEAD&quot;            </span><br><span class="line">                      | &quot;POST&quot;            </span><br><span class="line">                      | &quot;PUT&quot;             </span><br><span class="line">                      | &quot;DELETE&quot;          </span><br><span class="line">                      | &quot;TRACE&quot;           </span><br><span class="line">                      | &quot;CONNECT&quot;         </span><br><span class="line">                      | extension-method</span><br><span class="line">       extension-method = token</span><br></pre></td></tr></table></figure>
+<h4 id="Request-URI"><a href="#Request-URI" class="headerlink" title="Request-URI"></a>Request-URI</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Request-URI    = &quot;*&quot; | absoluteURI | abs_path | authority</span><br></pre></td></tr></table></figure>
+<p>例子：GET <a href="http://www.w3.org/pub/WWW/TheProject.html" target="_blank" rel="noopener">http://www.w3.org/pub/WWW/TheProject.html</a> HTTP/1.1</p>
+<h4 id="Request-Header-Fields"><a href="#Request-Header-Fields" class="headerlink" title="Request Header Fields"></a>Request Header Fields</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">request-header = Accept                   </span><br><span class="line">                     | Accept-Charset     </span><br><span class="line">                     | Accept-Encoding    </span><br><span class="line">                     | Accept-Language    </span><br><span class="line">                     | Authorization      </span><br><span class="line">                     | Expect             </span><br><span class="line">                     | From               </span><br><span class="line">                     | Host               </span><br><span class="line">                     | If-Match           </span><br><span class="line">                      | If-Modified-Since </span><br><span class="line">                     | If-None-Match      </span><br><span class="line">                     | If-Range           </span><br><span class="line">                     | If-Unmodified-Since</span><br><span class="line">                     | Max-Forwards       </span><br><span class="line">                     | Proxy-Authorization</span><br><span class="line">                     | Range              </span><br><span class="line">                     | Referer            </span><br><span class="line">                     | TE                 </span><br><span class="line">                     | User-Agent</span><br></pre></td></tr></table></figure>
+<h2 id="Response"><a href="#Response" class="headerlink" title="Response"></a>Response</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Response      = Status-Line               ;</span><br><span class="line">                       *(( general-header        </span><br><span class="line">                        | response-header        </span><br><span class="line">                        | entity-header ) CRLF)  </span><br><span class="line">                       CRLF</span><br><span class="line">                       [ message-body ]</span><br></pre></td></tr></table></figure>
+<h4 id="Status-Line"><a href="#Status-Line" class="headerlink" title="Status-Line"></a>Status-Line</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Status-Line = HTTP-Version SP Status-Code SP Reason-Phrase CRLF</span><br></pre></td></tr></table></figure>
+<h4 id="Status-Code-and-Reason-Phrase"><a href="#Status-Code-and-Reason-Phrase" class="headerlink" title="Status Code and Reason Phrase"></a>Status Code and Reason Phrase</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">- 1xx: Informational - Request received, continuing process</span><br><span class="line"></span><br><span class="line">- 2xx: Success - The action was successfully received,</span><br><span class="line">understood, and accepted</span><br><span class="line"></span><br><span class="line">- 3xx: Redirection - Further action must be taken in order to</span><br><span class="line">complete the request</span><br><span class="line"></span><br><span class="line">- 4xx: Client Error - The request contains bad syntax or cannot</span><br><span class="line">be fulfilled</span><br><span class="line"></span><br><span class="line">- 5xx: Server Error - The server failed to fulfill an apparently</span><br><span class="line">valid request</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">Status-Code    =</span><br><span class="line">          | &quot;100&quot;  ; Continue</span><br><span class="line">          | &quot;101&quot;  ; Switching Protocols</span><br><span class="line">          | &quot;200&quot;  ; OK</span><br><span class="line">          | &quot;201&quot;  ; Created</span><br><span class="line">          | &quot;202&quot;  ; Accepted</span><br><span class="line">          | &quot;203&quot;  ; Non-Authoritative Information</span><br><span class="line">          | &quot;204&quot;  ; No Content</span><br><span class="line">          | &quot;205&quot;  ; Reset Content</span><br><span class="line">          | &quot;206&quot;  ; Partial Content</span><br><span class="line">          | &quot;300&quot;  ; Multiple Choices</span><br><span class="line">          | &quot;301&quot;  ; Moved Permanently</span><br><span class="line">          | &quot;302&quot;  ; Found</span><br><span class="line">          | &quot;303&quot;  ; See Other</span><br><span class="line">          | &quot;304&quot;  ; Not Modified</span><br><span class="line">          | &quot;305&quot;  ; Use Proxy</span><br><span class="line">          | &quot;307&quot;  ; Temporary Redirect</span><br><span class="line">          | &quot;400&quot;  ; Bad Request</span><br><span class="line">          | &quot;401&quot;  ; Unauthorized</span><br><span class="line">          | &quot;402&quot;  ; Payment Required</span><br><span class="line">          | &quot;403&quot;  ; Forbidden</span><br><span class="line">          | &quot;404&quot;  ; Not Found</span><br><span class="line">          | &quot;405&quot;  ; Method Not Allowed</span><br><span class="line">          | &quot;406&quot;  ; Not Acceptable</span><br><span class="line">          | &quot;407&quot;  ; Proxy Authentication Required</span><br><span class="line">          | &quot;408&quot;  ; Request Time-out</span><br><span class="line">          | &quot;409&quot;  ;: Conflict</span><br><span class="line">          | &quot;410&quot;  ;: Gone</span><br><span class="line">          | &quot;411&quot;  ;: Length Required</span><br><span class="line">          | &quot;412&quot;  ;: Precondition Failed</span><br><span class="line">          | &quot;413&quot;  ;: Request Entity Too Large</span><br><span class="line">          | &quot;414&quot;  ;: Request-URI Too Large</span><br><span class="line">          | &quot;415&quot;  ;: Unsupported Media Type</span><br><span class="line">          | &quot;416&quot;  ;: Requested range not satisfiable</span><br><span class="line">          | &quot;417&quot;  ;: Expectation Failed</span><br><span class="line">          | &quot;500&quot;  ; Internal Server Error</span><br><span class="line">          | &quot;501&quot;  ; Not Implemented</span><br><span class="line">          | &quot;502&quot;  ; Bad Gateway</span><br><span class="line">          | &quot;503&quot;  ; Service Unavailable</span><br><span class="line">          | &quot;504&quot;  ; Gateway Time-out</span><br><span class="line">          | &quot;505&quot;  ; HTTP Version not supported</span><br><span class="line">          | extension-code</span><br></pre></td></tr></table></figure>
+<h4 id="Response-Header-Fields"><a href="#Response-Header-Fields" class="headerlink" title="Response Header Fields"></a>Response Header Fields</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">response-header = Accept-Ranges           </span><br><span class="line">                       | Age              </span><br><span class="line">                       | ETag             </span><br><span class="line">                       | Location         </span><br><span class="line">                       | Proxy-Authenticate</span><br><span class="line">                       | Retry-After      </span><br><span class="line">                       | Server           </span><br><span class="line">                       | Vary             </span><br><span class="line">                       | WWW-Authenticate</span><br></pre></td></tr></table></figure>
+
+        </div>
+    
+
+</div>
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
+            <a href="/2018/01/02/Xpath-Cheatsheet/">
+                Xpath Cheatsheet
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2018-01-02</span>
+            
+            
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <h3 id="Xpath-test-bed-链接地址"><a href="#Xpath-test-bed-链接地址" class="headerlink" title="Xpath test bed(链接地址)"></a>Xpath test bed(<a href="https://devhints.io/xpath#axes" target="_blank" rel="noopener">链接地址</a>)</h3><p>Test queries in the Xpath test bed:<br><a href="http://www.whitebeam.org/library/guide/TechNotes/xpathtestbed.rhtm" target="_blank" rel="noopener">Xpath test bed</a> <em>(whitebeam.org)</em></p>
+<h3 id="Browser-console"><a href="#Browser-console" class="headerlink" title="Browser console"></a>Browser console</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$x(&apos;//div&apos;)</span><br></pre></td></tr></table></figure>
+<p>Works in Firefox and Chrome.</p>
+<h2 id="Selectors"><a href="#Selectors" class="headerlink" title="Selectors"></a>Selectors</h2><h3 id="Descendant-selectors"><a href="#Descendant-selectors" class="headerlink" title="Descendant selectors"></a>Descendant selectors</h3><table>
+<thead>
+<tr>
+<th><code>h1</code></th>
+<th><code>//h1</code></th>
+<th><a href="https://devhints.io/xpath#prefixes" target="_blank" rel="noopener">?</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>div p</code></td>
+<td><code>//div//p</code></td>
+<td><a href="https://devhints.io/xpath#axes" target="_blank" rel="noopener">?</a></td>
+</tr>
+<tr>
+<td><code>ul &gt; li</code></td>
+<td><code>//ul/li</code></td>
+<td><a href="https://devhints.io/xpath#axes" target="_blank" rel="noopener">?</a></td>
+</tr>
+<tr>
+<td><code>ul &gt; li &gt; a</code></td>
+<td><code>//ul/li/a</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>div &gt; *</code></td>
+<td><code>//div/*</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>:root</code></td>
+<td><code>/</code></td>
+<td><a href="https://devhints.io/xpath#prefixes" target="_blank" rel="noopener">?</a></td>
+</tr>
+<tr>
+<td><code>:root &gt; body</code></td>
+<td><code>/body</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Attribute-selectors"><a href="#Attribute-selectors" class="headerlink" title="Attribute selectors"></a>Attribute selectors</h3><table>
+<thead>
+<tr>
+<th><code>#id</code></th>
+<th><code>//[@id=&quot;id&quot;]</code></th>
+<th><a href="https://devhints.io/xpath#predicates" target="_blank" rel="noopener">?</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.class</code></td>
+<td><code>//[@class=&quot;class&quot;]</code> <em>…kinda</em></td>
+<td></td>
+</tr>
+<tr>
+<td><code>input[type=&quot;submit&quot;]</code></td>
+<td><code>//input[@type=&quot;submit&quot;]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>a#abc[for=&quot;xyz&quot;]</code></td>
+<td><code>//a[@id=&quot;abc&quot;][@for=&quot;xyz&quot;]</code></td>
+<td><a href="https://devhints.io/xpath#chaining-order" target="_blank" rel="noopener">?</a></td>
+</tr>
+<tr>
+<td><code>a[rel]</code></td>
+<td><code>//a[@rel]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>a[href^=&#39;/&#39;]</code></td>
+<td><code>//a[starts-with(@href, &#39;/&#39;)]</code></td>
+<td><a href="https://devhints.io/xpath#string-functions" target="_blank" rel="noopener">?</a></td>
+</tr>
+<tr>
+<td><code>a[href$=&#39;pdf&#39;]</code></td>
+<td><code>//a[ends-with(@href, &#39;.pdf&#39;)]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>a[href~=&#39;://&#39;]</code></td>
+<td><code>//a[contains(@href, &#39;://&#39;)]</code> <em>…kinda</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Order-selectors"><a href="#Order-selectors" class="headerlink" title="Order selectors"></a>Order selectors</h3><table>
+<thead>
+<tr>
+<th><code>ul &gt; li:first-child</code></th>
+<th><code>//ul/li[1]</code></th>
+<th><a href="https://devhints.io/xpath#indexing" target="_blank" rel="noopener">?</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ul &gt; li:nth-child(2)</code></td>
+<td><code>//ul/li[2]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>ul &gt; li:last-child</code></td>
+<td><code>//ul/li[last()]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>li#id:first-child</code></td>
+<td><code>//li[@id=&quot;id&quot;][1]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>a:first-child</code></td>
+<td><code>//a[1]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>a:last-child</code></td>
+<td><code>//a[last()]</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Siblings"><a href="#Siblings" class="headerlink" title="Siblings"></a>Siblings</h3><table>
+<thead>
+<tr>
+<th><code>h1 ~ ul</code></th>
+<th><code>//h1/following-sibling::ul</code></th>
+<th><a href="https://devhints.io/xpath#using-axes" target="_blank" rel="noopener">?</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>h1 + ul</code></td>
+<td><code>//h1/following-sibling::ul[1]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>h1 ~ #id</code></td>
+<td><code>//h1/following-sibling::[@id=&quot;id&quot;]</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="jQuery"><a href="#jQuery" class="headerlink" title="jQuery"></a>jQuery</h3><table>
+<thead>
+<tr>
+<th><code>$(&#39;ul &gt; li&#39;).parent()</code></th>
+<th><code>//ul/li/..</code></th>
+<th><a href="https://devhints.io/xpath#other-axes" target="_blank" rel="noopener">?</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>$(&#39;li&#39;).closest(&#39;section&#39;)</code></td>
+<td><code>//li/ancestor-or-self::section</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>$(&#39;a&#39;).attr(&#39;href&#39;)</code></td>
+<td><code>//a/@href</code></td>
+<td><a href="https://devhints.io/xpath#steps" target="_blank" rel="noopener">?</a></td>
+</tr>
+<tr>
+<td><code>$(&#39;span&#39;).text()</code></td>
+<td><code>//span/text()</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Other-things"><a href="#Other-things" class="headerlink" title="Other things"></a>Other things</h3><table>
+<thead>
+<tr>
+<th><code>h1:not([id])</code></th>
+<th><code>//h1[not(@id)]</code></th>
+<th><a href="https://devhints.io/xpath#boolean-functions" target="_blank" rel="noopener">?</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Text match</td>
+<td><code>//button[text()=&quot;Submit&quot;]</code></td>
+<td><a href="https://devhints.io/xpath#operators" target="_blank" rel="noopener">?</a></td>
+</tr>
+<tr>
+<td>Text match (substring)</td>
+<td><code>//button[contains(text(),&quot;Go&quot;)]</code></td>
+<td></td>
+</tr>
+<tr>
+<td>Arithmetic</td>
+<td><code>//product[@price &gt; 2.50]</code></td>
+<td></td>
+</tr>
+<tr>
+<td>Has children</td>
+<td><code>//ul[*]</code></td>
+<td></td>
+</tr>
+<tr>
+<td>Has children (specific)</td>
+<td><code>//ul[li]</code></td>
+<td></td>
+</tr>
+<tr>
+<td>Or logic</td>
+<td><code>//a[@name or @href]</code></td>
+<td><a href="https://devhints.io/xpath#operators" target="_blank" rel="noopener">?</a></td>
+</tr>
+<tr>
+<td>Union (joins results)</td>
+<td>`//a</td>
+<td>//div`</td>
+<td><a href="https://devhints.io/xpath#unions" target="_blank" rel="noopener">?</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Class-check"><a href="#Class-check" class="headerlink" title="Class check"></a>Class check</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//div[contains(concat(&apos; &apos;,normalize-space(@class),&apos; &apos;),&apos; foobar &apos;)]</span><br></pre></td></tr></table></figure>
+<p>Xpath doesn’t have the “check if part of space-separated list” operator, so this is the workaround (<a href="http://pivotallabs.com/xpath-css-class-matching/" target="_blank" rel="noopener">source</a>).</p>
+<h2 id="Expressions"><a href="#Expressions" class="headerlink" title="Expressions"></a>Expressions</h2><h3 id="Steps-and-axes"><a href="#Steps-and-axes" class="headerlink" title="Steps and axes"></a>Steps and axes</h3><table>
+<thead>
+<tr>
+<th><code>//</code></th>
+<th><code>ul</code></th>
+<th><code>/</code></th>
+<th><code>a[@id=&#39;link&#39;]</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Axis</td>
+<td>Step</td>
+<td>Axis</td>
+<td>Step</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Prefixes"><a href="#Prefixes" class="headerlink" title="Prefixes"></a>Prefixes</h3><table>
+<thead>
+<tr>
+<th>Prefix</th>
+<th>Example</th>
+<th>What</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>//</code></td>
+<td><code>//hr[@class=&#39;edge&#39;]</code></td>
+<td>Anywhere</td>
+</tr>
+<tr>
+<td><code>./</code></td>
+<td><code>./a</code></td>
+<td>Relative</td>
+</tr>
+<tr>
+<td><code>/</code></td>
+<td><code>/html/body/div</code></td>
+<td>Root</td>
+</tr>
+</tbody>
+</table>
+<p>Begin your expression with any of these.</p>
+<h3 id="Axes"><a href="#Axes" class="headerlink" title="Axes"></a>Axes</h3><table>
+<thead>
+<tr>
+<th>Axis</th>
+<th>Example</th>
+<th>What</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/</code></td>
+<td><code>//ul/li/a</code></td>
+<td>Child</td>
+</tr>
+<tr>
+<td><code>//</code></td>
+<td><code>//[@id=&quot;list&quot;]//a</code></td>
+<td>Descendant</td>
+</tr>
+</tbody>
+</table>
+<p>Separate your steps with <code>/</code>. Use two (<code>//</code>) if you don’t want to select direct children.</p>
+<h3 id="Steps"><a href="#Steps" class="headerlink" title="Steps"></a>Steps</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">//div</span><br><span class="line">//div[@name=&apos;box&apos;]</span><br><span class="line">//[@id=&apos;link&apos;]</span><br></pre></td></tr></table></figure>
+<p>A step may have an element name (<code>div</code>) and <a href="https://devhints.io/xpath#predicate" target="_blank" rel="noopener">predicates</a> (<code>[...]</code>). Both are optional. They can also be these other things:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">//a/text()     #=&gt; &quot;Go home&quot;</span><br><span class="line">//a/@href      #=&gt; &quot;index.html&quot;</span><br><span class="line">//a/*          #=&gt; All a&apos;s child elements</span><br></pre></td></tr></table></figure>
+<h2 id="Predicates"><a href="#Predicates" class="headerlink" title="Predicates"></a>Predicates</h2><h3 id="Predicates-1"><a href="#Predicates-1" class="headerlink" title="Predicates"></a>Predicates</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">//div[true()] </span><br><span class="line">//div[@class=&quot;head&quot;]</span><br><span class="line">//div[@class=&quot;head&quot;][@id=&quot;top&quot;]</span><br></pre></td></tr></table></figure>
+<p>Restricts a nodeset only if some condition is true. They can be chained.</p>
+<h3 id="Operators"><a href="#Operators" class="headerlink" title="Operators"></a>Operators</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Comparison</span><br><span class="line">//a[@id = &quot;xyz&quot;]</span><br><span class="line">//a[@id != &quot;xyz&quot;]</span><br><span class="line">//a[@price &gt; 25]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># Logic (and/or)</span><br><span class="line">//div[@id=&quot;head&quot; and position()=2]</span><br><span class="line">//div[(x and y) or not(z)]</span><br></pre></td></tr></table></figure>
+<p>Use comparison and logic operators to make conditionals.</p>
+<h3 id="Using-nodes"><a href="#Using-nodes" class="headerlink" title="Using nodes"></a>Using nodes</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># Use them inside functions</span><br><span class="line">//ul[count(li) &gt; 2]</span><br><span class="line">//ul[count(li[@class=&apos;hide&apos;]) &gt; 0]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># This returns `&lt;ul&gt;` that has a `&lt;li&gt;` child</span><br><span class="line">//ul[li]</span><br></pre></td></tr></table></figure>
+<p>You can use nodes inside predicates.</p>
+<h3 id="Indexing"><a href="#Indexing" class="headerlink" title="Indexing"></a>Indexing</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//a[1]                  # first &lt;a&gt;</span><br><span class="line">//a[last()]             # last &lt;a&gt;</span><br><span class="line">//ol/li[2]              # second &lt;li&gt;</span><br><span class="line">//ol/li[position()=2]   # same as above</span><br><span class="line">//ol/li[position()&gt;1]   # :not(:first-child)</span><br></pre></td></tr></table></figure>
+<p>Use <code>[]</code> with a number, or <code>last()</code> or <code>position()</code>.</p>
+<h3 id="Chaining-order"><a href="#Chaining-order" class="headerlink" title="Chaining order"></a>Chaining order</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a[1][@href=&apos;/&apos;]</span><br><span class="line">a[@href=&apos;/&apos;][1]</span><br></pre></td></tr></table></figure>
+<p>Order is significant, these two are different.</p>
+<h3 id="Nesting-predicates"><a href="#Nesting-predicates" class="headerlink" title="Nesting predicates"></a>Nesting predicates</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//section[//h1[@id=&apos;hi&apos;]]</span><br></pre></td></tr></table></figure>
+<p>This returns <code>&lt;section&gt;</code> if it has an <code>&lt;h1&gt;</code> descendant with <code>id=&#39;hi&#39;</code>.</p>
+<h2 id="Functions"><a href="#Functions" class="headerlink" title="Functions"></a>Functions</h2><h3 id="Node-functions"><a href="#Node-functions" class="headerlink" title="Node functions"></a>Node functions</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">name()                     # //[starts-with(name(), &apos;h&apos;)]</span><br><span class="line">text()                     # //button[text()=&quot;Submit&quot;]</span><br><span class="line">                           # //button/text()</span><br><span class="line">lang(str)</span><br><span class="line">namespace-uri()</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">count()                    # //table[count(tr)=1]</span><br><span class="line">position()                 # //ol/li[position()=2]</span><br></pre></td></tr></table></figure>
+<h3 id="Boolean-functions"><a href="#Boolean-functions" class="headerlink" title="Boolean functions"></a>Boolean functions</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">not(expr)                  # button[not(starts-with(text(),&quot;Submit&quot;))]</span><br></pre></td></tr></table></figure>
+<h3 id="String-functions"><a href="#String-functions" class="headerlink" title="String functions"></a>String functions</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">contains()                 # font[contains(@class,&quot;head&quot;)]</span><br><span class="line">starts-with()              # font[starts-with(@class,&quot;head&quot;)]</span><br><span class="line">ends-with()                # font[ends-with(@class,&quot;head&quot;)]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">concat(x,y)</span><br><span class="line">substring(str, start, len)</span><br><span class="line">substring-before(&quot;01/02&quot;, &quot;/&quot;)  #=&gt; 01</span><br><span class="line">substring-after(&quot;01/02&quot;, &quot;/&quot;)   #=&gt; 02</span><br><span class="line">translate()</span><br><span class="line">normalize-space()</span><br><span class="line">string-length()</span><br></pre></td></tr></table></figure>
+<h3 id="Type-conversion"><a href="#Type-conversion" class="headerlink" title="Type conversion"></a>Type conversion</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">string()</span><br><span class="line">number()</span><br><span class="line">boolean()</span><br></pre></td></tr></table></figure>
+<h2 id="Axes-1"><a href="#Axes-1" class="headerlink" title="Axes"></a>Axes</h2><h3 id="Using-axes"><a href="#Using-axes" class="headerlink" title="Using axes"></a>Using axes</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//ul/li                       # ul &gt; li</span><br><span class="line">//ul/child::li                # ul &gt; li (same)</span><br><span class="line">//ul/following-sibling::li    # ul ~ li</span><br><span class="line">//ul/descendant-or-self::li   # ul li</span><br><span class="line">//ul/ancestor-or-self::li     # $(&apos;ul&apos;).closest(&apos;li&apos;)</span><br></pre></td></tr></table></figure>
+<p>Steps of an expression are separated by <code>/</code>, usually used to pick child nodes. That’s not always true: you can specify a different “axis” with <code>::</code>.</p>
+<table>
+<thead>
+<tr>
+<th><code>//</code></th>
+<th><code>ul</code></th>
+<th><code>/child::</code></th>
+<th><code>li</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Axis</td>
+<td>Step</td>
+<td>Axis</td>
+<td>Step</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Child-axis"><a href="#Child-axis" class="headerlink" title="Child axis"></a>Child axis</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># both the same</span><br><span class="line">//ul/li/a</span><br><span class="line">//child::ul/child::li/child::a</span><br></pre></td></tr></table></figure>
+<p><code>child::</code> is the default axis. This makes <code>//a/b/c</code> work.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># both the same</span><br><span class="line"># this works because `child::li` is truthy, so the predicate succeeds</span><br><span class="line">//ul[li]</span><br><span class="line">//ul[child::li]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># both the same</span><br><span class="line">//ul[count(li) &gt; 2]</span><br><span class="line">//ul[count(child::li) &gt; 2]</span><br></pre></td></tr></table></figure>
+<h3 id="Descendant-or-self-axis"><a href="#Descendant-or-self-axis" class="headerlink" title="Descendant-or-self axis"></a>Descendant-or-self axis</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># both the same</span><br><span class="line">//div//h4</span><br><span class="line">//div/descendant-or-self::h4</span><br></pre></td></tr></table></figure>
+<p><code>//</code> is short for the <code>descendant-or-self::</code> axis.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># both the same</span><br><span class="line">//ul//[last()]</span><br><span class="line">//ul/descendant-or-self::[last()]</span><br></pre></td></tr></table></figure>
+<h3 id="Other-axes"><a href="#Other-axes" class="headerlink" title="Other axes"></a>Other axes</h3><table>
+<thead>
+<tr>
+<th>Axis</th>
+<th>Abbrev</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ancestor</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>ancestor-or-self</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>attribute</code></td>
+<td><code>@</code></td>
+<td><code>@href</code> is short for <code>attribute::href</code></td>
+</tr>
+<tr>
+<td><code>child</code></td>
+<td></td>
+<td><code>div</code> is short for <code>child::div</code></td>
+</tr>
+<tr>
+<td><code>descendant</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>descendant-or-self</code></td>
+<td><code>//</code></td>
+<td><code>//</code> is short for <code>/descendant-or-self::node()/</code></td>
+</tr>
+<tr>
+<td><code>namespace</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>self</code></td>
+<td><code>.</code></td>
+<td><code>.</code> is short for <code>self::node()</code></td>
+</tr>
+<tr>
+<td><code>parent</code></td>
+<td><code>..</code></td>
+<td><code>..</code> is short for <code>parent::node()</code></td>
+</tr>
+<tr>
+<td><code>following</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>following-sibling</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>preceding</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>preceding-sibling</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>There are other axes you can use.</p>
+<h3 id="Unions"><a href="#Unions" class="headerlink" title="Unions"></a>Unions</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//a | //span</span><br></pre></td></tr></table></figure>
+<p>Use <code>|</code> to join two expressions.</p>
+<h2 id="More-examples"><a href="#More-examples" class="headerlink" title="More examples"></a>More examples</h2><h3 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//*                 # all elements</span><br><span class="line">count(//*)          # count all elements</span><br><span class="line">(//h1)[1]/text()    # text of the first h1 heading</span><br><span class="line">//li[span]          # find a &lt;li&gt; with an &lt;span&gt; inside it</span><br><span class="line">                    # ...expands to //li[child::span]</span><br><span class="line">//ul/li/..          # use .. to select a parent</span><br></pre></td></tr></table></figure>
+<h3 id="Find-a-parent"><a href="#Find-a-parent" class="headerlink" title="Find a parent"></a>Find a parent</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//section[h1[@id=&apos;section-name&apos;]]</span><br></pre></td></tr></table></figure>
+<p>Finds a <code>&lt;section&gt;</code> that directly contains <code>h1#section-name</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># Find a &lt;section&gt; that contains h1#section-name</span><br><span class="line">//section[//*[@id=&apos;section-name&apos;]]</span><br></pre></td></tr></table></figure>
+<p>Finds a <code>&lt;section&gt;</code> that contains <code>h1#section-name</code>. (Same as above, but uses descendant-or-self instead of child)</p>
+<h3 id="Closest"><a href="#Closest" class="headerlink" title="Closest"></a>Closest</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./ancestor-or-self::[@class=&quot;box&quot;]</span><br></pre></td></tr></table></figure>
+<p>Works like jQuery’s <code>$().closest(&#39;.box&#39;)</code>.</p>
+<h3 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//item[@price &gt; 2*@discount]</span><br></pre></td></tr></table></figure>
+<p>Finds <code>&lt;item&gt;</code> and check its attributes</p>
+
+        </div>
+    
+
+</div>
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
+            <a href="/2018/01/02/Vim-Cheatsheet/">
+                Vim Cheatsheet
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2018-01-02</span>
+            
+            
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <h3 id="Exiting-链接地址"><a href="#Exiting-链接地址" class="headerlink" title="Exiting(链接地址)"></a>Exiting(<a href="https://devhints.io/vim" target="_blank" rel="noopener">链接地址</a>)</h3><table>
+<thead>
+<tr>
+<th><code>:qa</code></th>
+<th>Close all files</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>:qa!</code></td>
+<td>Close all files, abandon changes</td>
+</tr>
+<tr>
+<td><code>:w</code></td>
+<td>Save</td>
+</tr>
+<tr>
+<td><code>:wq</code> <em>/</em> <code>:x</code></td>
+<td>Save and close file</td>
+</tr>
+<tr>
+<td><code>:q</code></td>
+<td>Close file</td>
+</tr>
+<tr>
+<td><code>:q!</code></td>
+<td>Close file, abandon changes</td>
+</tr>
+<tr>
+<td><code>ZZ</code></td>
+<td>Save and quit</td>
+</tr>
+<tr>
+<td><code>ZQ</code></td>
+<td>Quit without checking changes</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Navigating"><a href="#Navigating" class="headerlink" title="Navigating"></a>Navigating</h3><table>
+<thead>
+<tr>
+<th><code>h</code> <code>j</code> <code>k</code> <code>l</code></th>
+<th>Arrow keys</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;C-U&gt;</code> <em>/</em> <code>&lt;C-D&gt;</code></td>
+<td>Page up/page down</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Words"><a href="#Words" class="headerlink" title="Words"></a>Words</h4><table>
+<thead>
+<tr>
+<th><code>b</code> <em>/</em> <code>w</code></th>
+<th>Previous/next word</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>e</code> <em>/</em> <code>ge</code></td>
+<td>Previous/next end of word</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Line"><a href="#Line" class="headerlink" title="Line"></a>Line</h4><table>
+<thead>
+<tr>
+<th><code>0</code> <em>(zero)</em></th>
+<th>Start of line</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>^</code></td>
+<td>Start of line <em>(after whitespace)</em></td>
+</tr>
+<tr>
+<td><code>$</code></td>
+<td>End of line</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Document"><a href="#Document" class="headerlink" title="Document"></a>Document</h4><table>
+<thead>
+<tr>
+<th><code>gg</code></th>
+<th>First line</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>G</code></td>
+<td>Last line</td>
+</tr>
+<tr>
+<td><code>:n</code></td>
+<td>Go to line <code>n</code></td>
+</tr>
+<tr>
+<td><code>nG</code></td>
+<td>Go to line <code>n</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Editing"><a href="#Editing" class="headerlink" title="Editing"></a>Editing</h3><table>
+<thead>
+<tr>
+<th><code>a</code></th>
+<th>Append</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>i</code></td>
+<td>Insert</td>
+</tr>
+<tr>
+<td><code>o</code></td>
+<td>Next line</td>
+</tr>
+<tr>
+<td><code>O</code></td>
+<td>Previous line</td>
+</tr>
+<tr>
+<td><code>s</code></td>
+<td>Delete char and insert</td>
+</tr>
+<tr>
+<td><code>S</code></td>
+<td>Delete line and insert</td>
+</tr>
+<tr>
+<td><code>C</code></td>
+<td>Delete until end of line and insert</td>
+</tr>
+<tr>
+<td><code>r</code></td>
+<td>Replace one character</td>
+</tr>
+<tr>
+<td><code>R</code></td>
+<td>Enter Replace mode</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Exiting-insert-mode"><a href="#Exiting-insert-mode" class="headerlink" title="Exiting insert mode"></a>Exiting insert mode</h3><table>
+<thead>
+<tr>
+<th><code>Esc</code> <em>/</em> <code>&lt;C-[&gt;</code></th>
+<th>Exit insert mode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;C-C&gt;</code></td>
+<td>Exit insert mode, and abort current command</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Clipboard"><a href="#Clipboard" class="headerlink" title="Clipboard"></a>Clipboard</h3><table>
+<thead>
+<tr>
+<th><code>x</code></th>
+<th>Delete character</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>dd</code></td>
+<td>Delete line <em>(Cut)</em></td>
+</tr>
+<tr>
+<td><code>yy</code></td>
+<td>Yank line <em>(Copy)</em></td>
+</tr>
+<tr>
+<td><code>p</code></td>
+<td>Paste</td>
+</tr>
+<tr>
+<td><code>P</code></td>
+<td>Paste before</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Visual-mode"><a href="#Visual-mode" class="headerlink" title="Visual mode"></a>Visual mode</h3><table>
+<thead>
+<tr>
+<th><code>v</code></th>
+<th>Enter visual mode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>V</code></td>
+<td>Enter visual line mode</td>
+</tr>
+<tr>
+<td><code>&lt;C-V&gt;</code></td>
+<td>Enter visual block mode</td>
+</tr>
+</tbody>
+</table>
+<h4 id="In-visual-mode"><a href="#In-visual-mode" class="headerlink" title="In visual mode"></a>In visual mode</h4><table>
+<thead>
+<tr>
+<th><code>d</code> <em>/</em> <code>x</code></th>
+<th>Delete selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>s</code></td>
+<td>Replace selection</td>
+</tr>
+<tr>
+<td><code>y</code></td>
+<td>Yank selection <em>(Copy)</em></td>
+</tr>
+</tbody>
+</table>
+<p>See <a href="https://devhints.io/vim#operators" target="_blank" rel="noopener">Operators</a> for other things you can do.</p>
+<h2 id="Operators"><a href="#Operators" class="headerlink" title="Operators"></a>Operators</h2><h3 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h3><p>Operators let you operate in a range of text (defined by <em>motion</em>). These are preformed in normal mode.</p>
+<table>
+<thead>
+<tr>
+<th><code>d</code></th>
+<th><code>w</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Operator</td>
+<td>Motion</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Operators-list"><a href="#Operators-list" class="headerlink" title="Operators list"></a>Operators list</h3><table>
+<thead>
+<tr>
+<th><code>d</code></th>
+<th>Delete</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>y</code></td>
+<td>Yank <em>(copy)</em></td>
+</tr>
+<tr>
+<td><code>c</code></td>
+<td>Change <em>(delete then insert)</em></td>
+</tr>
+<tr>
+<td><code>&gt;</code></td>
+<td>Indent right</td>
+</tr>
+<tr>
+<td><code>&lt;</code></td>
+<td>Indent left</td>
+</tr>
+<tr>
+<td><code>g~</code></td>
+<td>Swap case</td>
+</tr>
+<tr>
+<td><code>gU</code></td>
+<td>Uppercase</td>
+</tr>
+<tr>
+<td><code>gu</code></td>
+<td>Lowercase</td>
+</tr>
+<tr>
+<td><code>!</code></td>
+<td>Filter through external program</td>
+</tr>
+</tbody>
+</table>
+<p>See <code>:help operator</code></p>
+<h3 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h3><p>Combine operators with <em>motions</em> to use them.</p>
+<table>
+<thead>
+<tr>
+<th><code>d</code><em>d</em></th>
+<th><em>(repeat the letter)</em> Delete current line</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>d</code><em>w</em></td>
+<td>Delete to next word</td>
+</tr>
+<tr>
+<td><code>d</code><em>b</em></td>
+<td>Delete to beginning of word</td>
+</tr>
+<tr>
+<td><em>2</em><code>dd</code></td>
+<td>Delete 2 lines</td>
+</tr>
+<tr>
+<td><code>d</code><em>ip</em></td>
+<td>Delete a text object <em>(inside paragraph)</em></td>
+</tr>
+<tr>
+<td><em>(in visual mode)</em> <code>d</code></td>
+<td>Delete selection</td>
+</tr>
+</tbody>
+</table>
+<p>See: <code>:help motion.txt</code></p>
+<h2 id="Text-objects"><a href="#Text-objects" class="headerlink" title="Text objects"></a>Text objects</h2><h3 id="Usage-1"><a href="#Usage-1" class="headerlink" title="Usage"></a>Usage</h3><p>Text objects let you operate (with an <em>operator</em>) in or around text blocks (<em>objects</em>).</p>
+<table>
+<thead>
+<tr>
+<th><code>v</code></th>
+<th><code>i</code></th>
+<th><code>p</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Operator</td>
+<td>[i]nside or [a]round</td>
+<td>Text object</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Text-objects-1"><a href="#Text-objects-1" class="headerlink" title="Text objects"></a>Text objects</h3><table>
+<thead>
+<tr>
+<th><code>p</code></th>
+<th>Paragraph</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>w</code></td>
+<td>Word</td>
+</tr>
+<tr>
+<td><code>s</code></td>
+<td>Sentence</td>
+</tr>
+<tr>
+<td><code>[</code> <code>(</code> <code>{</code> <code>&lt;</code></td>
+<td>A [], (), or {} block</td>
+</tr>
+<tr>
+<td><code>&#39;</code> <code>&quot;</code> <figure class="highlight plain"><figcaption><span>A quoted string       |</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br></pre></td><td class="code"><pre><span class="line">| `b`             | A block [(            |</span><br><span class="line">| `B`             | A block in [&#123;         |</span><br><span class="line">| `t`             | A XML tag block       |</span><br><span class="line"></span><br><span class="line">### Examples</span><br><span class="line"></span><br><span class="line">| `vip`       | Select paragraph                   |</span><br><span class="line">| ----------- | ---------------------------------- |</span><br><span class="line">| `vipipipip` | Select more                        |</span><br><span class="line">| `yip`       | Yank inner paragraph               |</span><br><span class="line">| `yap`       | Yank paragraph (including newline) |</span><br><span class="line">| `dip`       | Delete inner paragraph             |</span><br><span class="line">| `cip`       | Change inner paragraph             |</span><br><span class="line"></span><br><span class="line">See [Operators](https://devhints.io/vim#operators) for other things you can do.</span><br><span class="line"></span><br><span class="line">## Misc</span><br><span class="line"></span><br><span class="line">### Folds</span><br><span class="line"></span><br><span class="line">| `zo` */* `zO` | Open                         |</span><br><span class="line">| ------------- | ---------------------------- |</span><br><span class="line">| `zc` */* `zC` | Close                        |</span><br><span class="line">| `za` */* `zA` | Toggle                       |</span><br><span class="line">| `zv`          | Open folds for this line     |</span><br><span class="line">| `zM`          | Close all                    |</span><br><span class="line">| `zR`          | Open all                     |</span><br><span class="line">| `zm`          | Fold more *(foldlevel += 1)* |</span><br><span class="line">| `zr`          | Fold less *(foldlevel -= 1)* |</span><br><span class="line">| `zx`          | Update folds                 |</span><br><span class="line"></span><br><span class="line">Uppercase ones are recursive (eg, `zO` is open recursively).</span><br><span class="line"></span><br><span class="line">### Navigation</span><br><span class="line"></span><br><span class="line">| `[(` `[&#123;` `[&lt;` | previous `(` or `&#123;` or `&lt;` |</span><br><span class="line">| -------------- | -------------------------- |</span><br><span class="line">| `])`           | next                       |</span><br><span class="line">| `[m`           | previous method start      |</span><br><span class="line">| `[M`           | previous method end        |</span><br><span class="line"></span><br><span class="line">### Jumping</span><br><span class="line"></span><br><span class="line">| `&lt;C-O&gt;` | Go back to previous location |</span><br><span class="line">| ------- | ---------------------------- |</span><br><span class="line">| `&lt;C-I&gt;` | Go forward                   |</span><br><span class="line">| `gf`    | go to file in cursor         |</span><br><span class="line"></span><br><span class="line">### Counters</span><br><span class="line"></span><br><span class="line">| `&lt;C-A&gt;` | increment number |</span><br><span class="line">| ------- | ---------------- |</span><br><span class="line">| `&lt;C-X&gt;` | decrement        |</span><br><span class="line"></span><br><span class="line">### Windows</span><br><span class="line"></span><br><span class="line">| `z&#123;height&#125;&lt;Cr&gt;` | Resize pane to `&#123;height&#125;` lines tall |</span><br><span class="line">| --------------- | ------------------------------------ |</span><br><span class="line">|                 |                                      |</span><br><span class="line"></span><br><span class="line">### Tags</span><br><span class="line"></span><br><span class="line">| `:tag Classname`     | Jump to first definition of Classname    |</span><br><span class="line">| -------------------- | ---------------------------------------- |</span><br><span class="line">| `&lt;C-]&gt;`              | Jump to definition                       |</span><br><span class="line">| `g]`                 | See all definitions                      |</span><br><span class="line">| `&lt;C-T&gt;`              | Go back to last tag                      |</span><br><span class="line">| `&lt;C-O&gt; &lt;C-I&gt;`        | Back/forward                             |</span><br><span class="line">| `:tselect Classname` | Find definitions of Classname            |</span><br><span class="line">| `:tjump Classname`   | Find definitions of Classname (auto-select 1st) |</span><br><span class="line"></span><br><span class="line">### Case</span><br><span class="line"></span><br><span class="line">| `~`   | toggle case (Case =&gt; cASE)           |</span><br><span class="line">| ----- | ------------------------------------ |</span><br><span class="line">| `gU`  | uppercase                            |</span><br><span class="line">| `gu`  | lowercase                            |</span><br><span class="line">| `gUU` | uppercase current line (also `gUgU`) |</span><br><span class="line">| `guu` | lowercase current line (also `gugu`) |</span><br><span class="line"></span><br><span class="line">Do these in visual or normal mode.</span><br><span class="line"></span><br><span class="line">### Marks</span><br><span class="line"></span><br><span class="line">| ``^` | Last position of cursor in insert mode   |</span><br><span class="line">| ---- | ---------------------------------------- |</span><br><span class="line">| ``.` | Last change                              |</span><br><span class="line">| ```` | Last jump                                |</span><br><span class="line">| `ma` | Mark this cursor position as `a`         |</span><br><span class="line">| ``a` | Jump to the cursor position `a`          |</span><br><span class="line">| `&apos;a` | Jump to the beginning of the line with position `a` |</span><br><span class="line"></span><br><span class="line">### Misc</span><br><span class="line"></span><br><span class="line">| `.`  | repeat last command                      |</span><br><span class="line">| ---- | ---------------------------------------- |</span><br><span class="line">| `]p` | paste under the current indentation level |</span><br><span class="line">| `zz` | Center this line                         |</span><br><span class="line"></span><br><span class="line">### Command line</span><br><span class="line"></span><br><span class="line">| `&lt;C-R&gt;&lt;C-W&gt;` | insert current word into the command line |</span><br><span class="line">| ------------ | ---------------------------------------- |</span><br><span class="line">| `&lt;C-R&gt;&quot;`     | paste from “ register                    |</span><br><span class="line"></span><br><span class="line">### Text alignment</span><br></pre></td></tr></table></figure></td>
+</tr>
+</tbody>
+</table>
+<p>:center [width]<br>:right [width]<br>:left</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">See `:help formatting`</span><br><span class="line"></span><br><span class="line">### Calculator</span><br></pre></td></tr></table></figure>
+<p><c-r>=128/2</c-r></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">Do this in insert mode.</span><br><span class="line"></span><br><span class="line">### Exiting with an error</span><br></pre></td></tr></table></figure>
+<p>:cq<br>:cquit</p>
+<p>```</p>
+<p>Works like <code>:qa</code>, but throws an error. Great for aborting Git commands.</p>
+
+        </div>
+    
+
+</div>
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
+            <a href="/2018/01/01/Xpath-syntax/">
+                Xpath Syntax
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2018-01-01</span>
+            
+            
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <h3 id="Path-句法-URL-："><a href="#Path-句法-URL-：" class="headerlink" title="Path 句法(URL)："></a>Path 句法(<a href="https://docs.python.org/2/library/xml.etree.elementtree.html" target="_blank" rel="noopener">URL</a>)：</h3><table>
+<thead>
+<tr>
+<th>Syntax</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>tag</code></td>
+<td>Selects all child elements with the given tag. For example, <code>spam</code> selects all child elements named <code>spam</code>, and <code>spam/egg</code> selects all grandchildren named <code>egg</code> in all children named <code>spam</code>.</td>
+</tr>
+<tr>
+<td><code>*</code></td>
+<td>Selects all child elements. For example, <code>*/egg</code> selects all grandchildren named <code>egg</code>.</td>
+</tr>
+<tr>
+<td><code>.</code></td>
+<td>Selects the current node. This is mostly useful at the beginning of the path, to indicate that it’s a relative path.</td>
+</tr>
+<tr>
+<td><code>//</code></td>
+<td>Selects all subelements, on all levels beneath the current element. For example, <code>.//egg</code> selects all <code>egg</code> elements in the entire tree.</td>
+</tr>
+<tr>
+<td><code>..</code></td>
+<td>Selects the parent element.</td>
+</tr>
+<tr>
+<td><code>[@attrib]</code></td>
+<td>Selects all elements that have the given attribute.</td>
+</tr>
+<tr>
+<td><code>[@attrib=&#39;value&#39;]</code></td>
+<td>Selects all elements for which the given attribute has the given value. The value cannot contain quotes.</td>
+</tr>
+<tr>
+<td><code>[tag]</code></td>
+<td>Selects all elements that have a child named <code>tag</code>. Only immediate children are supported.</td>
+</tr>
+<tr>
+<td><code>[tag=&#39;text&#39;]</code></td>
+<td>Selects all elements that have a child named <code>tag</code> whose complete text content, including descendants, equals the given <code>text</code>.</td>
+</tr>
+<tr>
+<td><code>[position]</code></td>
+<td>Selects all elements that are located at the given position. The position can be either an integer (1 is the first position), the expression <code>last()</code> (for the last position), or a position relative to the last position (e.g. <code>last()-1</code>).</td>
+</tr>
+</tbody>
+</table>
+<p>Predicates (expressions within square brackets) must be preceded by a tag name, an asterisk, or another predicate. <code>position</code> predicates must be preceded by a tag name.</p>
+<p>Xpath Python使用示例：</p>
+<p>Here’s an example that demonstrates some of the XPath capabilities of the module. We’ll be using the <code>countrydata</code> <strong>XML document</strong> from the <a href="#elementtree-parsing-xml">Parsing XML</a> section:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> xml.etree.ElementTree <span class="keyword">as</span> ET</span><br><span class="line"></span><br><span class="line">root = ET.fromstring(countrydata)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Top-level elements</span></span><br><span class="line">root.findall(<span class="string">"."</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># All 'neighbor' grand-children of 'country' children of the top-level</span></span><br><span class="line"><span class="comment"># elements</span></span><br><span class="line">root.findall(<span class="string">"./country/neighbor"</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Nodes with name='Singapore' that have a 'year' child</span></span><br><span class="line">root.findall(<span class="string">".//year/..[@name='Singapore']"</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 'year' nodes that are children of nodes with name='Singapore'</span></span><br><span class="line">root.findall(<span class="string">".//*[@name='Singapore']/year"</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># All 'neighbor' nodes that are the second child of their parent</span></span><br><span class="line">root.findall(<span class="string">".//neighbor[2]"</span>)</span><br></pre></td></tr></table></figure>
+<p>以上示例用于XML文本，如果要作用于HTML文本，需要将 <code>import xml.etree.ElementTree as ET</code> 改为 <code>import lxml.html</code> ，以及将 <code>root = ET.fromstring(countrydata)</code> 改为 <code>root = lxml.html.fromstring(HTMLData)</code></p>
+<h2 id="XPath-Axes"><a href="#XPath-Axes" class="headerlink" title="XPath Axes"></a>XPath Axes</h2><p>An axis defines a node-set relative to the current node.</p>
+<table>
+<thead>
+<tr>
+<th>AxisName</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ancestor</td>
+<td>Selects all ancestors (parent, grandparent, etc.) of the current node</td>
+</tr>
+<tr>
+<td>ancestor-or-self</td>
+<td>Selects all ancestors (parent, grandparent, etc.) of the current node and the current node itself</td>
+</tr>
+<tr>
+<td>attribute</td>
+<td>Selects all attributes of the current node</td>
+</tr>
+<tr>
+<td>child</td>
+<td>Selects all children of the current node</td>
+</tr>
+<tr>
+<td>descendant</td>
+<td>Selects all descendants (children, grandchildren, etc.) of the current node</td>
+</tr>
+<tr>
+<td>descendant-or-self</td>
+<td>Selects all descendants (children, grandchildren, etc.) of the current node and the current node itself</td>
+</tr>
+<tr>
+<td>following</td>
+<td>Selects everything in the document after the closing tag of the current node</td>
+</tr>
+<tr>
+<td>following-sibling</td>
+<td>Selects all siblings after the current node</td>
+</tr>
+<tr>
+<td>namespace</td>
+<td>Selects all namespace nodes of the current node</td>
+</tr>
+<tr>
+<td>parent</td>
+<td>Selects the parent of the current node</td>
+</tr>
+<tr>
+<td>preceding</td>
+<td>Selects all nodes that appear before the current node in the document, except ancestors, attribute nodes and namespace nodes</td>
+</tr>
+<tr>
+<td>preceding-sibling</td>
+<td>Selects all siblings before the current node</td>
+</tr>
+<tr>
+<td>self</td>
+<td>Selects the current node</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Axe-Examples"><a href="#Axe-Examples" class="headerlink" title="Axe Examples"></a>Axe Examples</h3><table>
+<thead>
+<tr>
+<th>Example</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>child::book</td>
+<td>Selects all book nodes that are children of the current node</td>
+</tr>
+<tr>
+<td>attribute::lang</td>
+<td>Selects the lang attribute of the current node</td>
+</tr>
+<tr>
+<td>child::*</td>
+<td>Selects all element children of the current node</td>
+</tr>
+<tr>
+<td>attribute::*</td>
+<td>Selects all attributes of the current node</td>
+</tr>
+<tr>
+<td>child::text()</td>
+<td>Selects all text node children of the current node</td>
+</tr>
+<tr>
+<td>child::node()</td>
+<td>Selects all children of the current node</td>
+</tr>
+<tr>
+<td>descendant::book</td>
+<td>Selects all book descendants of the current node</td>
+</tr>
+<tr>
+<td>ancestor::book</td>
+<td>Selects all book ancestors of the current node</td>
+</tr>
+<tr>
+<td>ancestor-or-self::book</td>
+<td>Selects all book ancestors of the current node - and the current as well if it is a book node</td>
+</tr>
+<tr>
+<td>child::*/child::price</td>
+<td>Selects all price grandchildren of the current node</td>
+</tr>
+</tbody>
+</table>
+
+        </div>
+    
+
+</div>
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
+            <a href="/2017/12/28/Best-atom-plugins/">
+                Best Atom Plugins
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2017-12-28</span>
+            
+            
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <p><strong>转载地址：</strong> <a href="http://shanky.org/2017/01/11/atom-editor-for-python/" target="_blank" rel="noopener">Shashank Tiwari</a></p>
+<p><a href="https://atom.io/" target="_blank" rel="noopener">Atom</a> is a beautiful and customizable editor that can be leveraged gainfully for Python programming. Built on <a href="http://electron.atom.io/" target="_blank" rel="noopener">Electron</a>, a technology for building cross platform desktop apps with JavaScript, HTML, and CSS, Atom is, as Github says, “hackable”. Its support for plugins and add-ons via packages allows one to add customizations and newer capabilities beyond what comes out of the box.</p>
+<h2 id="Atom-Packages"><a href="#Atom-Packages" class="headerlink" title="Atom Packages"></a>Atom Packages</h2><p>The package system is at the heart of Atom’s design. Atom itself has a very lightweight core and most of its own default features, like the “Settings View”, are implemented via packages. The out of box comes with over 90 packages installed.</p>
+<p>Newer packages can be searched and installed via the “Install” tab in the “Settings View”. Look at Figure 1, which shows the “Install” tab.</p>
+<p><img src="http://shanky.org/assets/images/install_tab_in_the_settings_view.png" alt="img">Figure 1: Atom Settings View Install Tab</p>
+<blockquote>
+<p>These searchable Atom packages are published to the official Atom registry at <a href="https://atom.io/packages" target="_blank" rel="noopener">https://atom.io/packages</a>.</p>
+</blockquote>
+<h3 id="Installing-using-the-command-line"><a href="#Installing-using-the-command-line" class="headerlink" title="Installing using the command line"></a>Installing using the command line</h3><p>Atom comes with a command line utility named <em>apm</em>, short for atom package manager. Latest version of a package can be installed easily using the following command:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apm install &lt;package_name&gt;</span><br></pre></td></tr></table></figure>
+<p>This assumes you know the exact name of the package you want to install. If you are not sure of the exact name of the package then you can search for packages like so:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apm search &lt;possible_package_name&gt;</span><br></pre></td></tr></table></figure>
+<p>While installing the latest version of a package is desirable, you may need to install a specific older version. Its easy to install a specific version as follows:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apm install &lt;package_name&gt;@&lt;package_version&gt;</span><br></pre></td></tr></table></figure>
+<p>To view more information about a specific package, use:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apm view &lt;package_name&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="Atom-Packages-for-Python"><a href="#Atom-Packages-for-Python" class="headerlink" title="Atom Packages for Python"></a>Atom Packages for Python</h2><p>PEP8 (short for Python Enhancement Proposal 8) is the style guide for Python code. Pythonic code is optimized for readability. Clean, explicit, and simple code structure, design, and layout is preferred over complexity. PEP257 specifies docstring conventions. Docstrings are string literals that appear as the first statement in a Python function, module, class, or method definition. It serves as code comments and is also accessible at runtime via the “<strong>doc</strong>” attribute. Atom’s support for code linters can help you proactively check your code for errors and adherence to PEP8 and PEP257.</p>
+<p>Linter is an Atom package that provides a unified and consistent api for all atom linter plugins. Start by installing this package:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apm install linter</span><br></pre></td></tr></table></figure>
+<p>Next, piggyback on the Python packages to do the heavy lifting. Install flake8, the wrapper around PyFlakes, pycodestyle, and Mc Cabe script. <em>pip</em> is the most popular and widely used package manager for Python and using it is very easy. To install flake8 and flake8-pep257, use pip as follows:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip install flake8</span><br><span class="line">pip install flake8-pep257</span><br></pre></td></tr></table></figure>
+<p>Now that flake8 is available on your system, install linter-flake8. The linter-flake8 package is a flake8 provider for linter. It makes it possible for Atom linter to leverage flake8 for checking Python code for style adherence. Install linter-flake8 like so:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apm install linter-flake8</span><br></pre></td></tr></table></figure>
+<h2 id="Automating-Style-Corrections"><a href="#Automating-Style-Corrections" class="headerlink" title="Automating Style Corrections"></a>Automating Style Corrections</h2><p>Linter with flake8’s help surfaces style related errors and warnings but doesn’t correct it for you. The python package autopep8 on the other hand autocorrects your errors. Install autopep8 via the command line as follows:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install autopep8</span><br></pre></td></tr></table></figure>
+<p>Formatting issues identified by PEP8 checkers are listed at <a href="https://pep8.readthedocs.io/en/latest/intro.html#error-codes" target="_blank" rel="noopener">PEP8 Error Codes</a>. autopep8 is capable of fixing most of these. autopep8 can be used via the command line to fix errors like so:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">autopep8 --in-place --aggressive --aggressive &lt;filename&gt;</span><br></pre></td></tr></table></figure>
+<p>Within an editor or a development environment its very convenient if the auto corrections are transparent and don’t involve invoking utilities via the command line. A good point for auto correction if often when a source code file is saved after it is edited. Atom’s atom-beautify package allows integration of autopep8 as the beautifier for Python code. It also offers the option to “Beautify on Save”. Install atom-beautify as follows:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apm install atom-beautify</span><br></pre></td></tr></table></figure>
+<p>Look at Figure 2, which illustrates the configuration options for Python within atom-beautify settings.</p>
+<p><img src="http://shanky.org/assets/images/atom_beautify_configuration_options_for_pyton.png" alt="img">Figure 2: atom-beautify configuration options for Python</p>
 
         </div>
     
@@ -209,6 +1796,19 @@
 </div>
 
 
+
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="wrap-pagination">
+                <a class="disabled" href="/">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </a>
+                <a class="" href="/page/2/">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -237,7 +1837,15 @@
             </li>
             
             <li>
-                <a class="footer-post" href="/2018/01/16/a-little-thought-about-learning-Python/">A Little Thought About Le</a>
+                <a class="footer-post" href="/2018/01/14/CSV-files/">CSV Files</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2018/01/11/python爬虫较为常用packages/">Python爬虫较为常用packages</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2018/01/08/Regex-syntax/">Regex Syntax</a>
             </li>
             
         </ul>

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="Python’s super() considered super!If you aren’t wowed by Python’s super() builtin, chances are you don’t really know what it is capable of doing or ho">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="hongyuan shao">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Guide to Using Super()"/>
+    
+
+    <!--Open Graph Description-->
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="hongyuan&#39;s blog"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+    <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>Guide to Using Super() - hongyuan&#39;s blog</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Google Analytics -->
+    
+
+
+</head>
+
+
+<body>
+
+<div class="bg-gradient"></div>
+<div class="bg-pattern"></div>
+
+<!-- Menu -->
+<!--Menu Links and Overlay-->
+<div class="menu-bg">
+    <div class="menu-container">
+        <ul>
+            
+            <li class="menu-item">
+                <a href="/">
+                    Home
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/archives">
+                    Archives
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/about.html">
+                    About
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/tags">
+                    Tags
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/categories">
+                    Categories
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/contact.html">
+                    Contact
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+<!--Hamburger Icon-->
+<nav>
+    <a href="#menu"></a>
+</nav>
+
+<div class="container">
+
+    <!-- Main Content -->
+    <div class="row">
+    <div class="col-sm-12">
+
+        <!--Title and Logo-->
+        <header>
+    <div class="logo">
+        <a href="/"><i class="logo-icon fa fa-cube" aria-hidden="true"></i></a>
+        
+    </div>
+</header>
+
+        <section class="main">
+            
+<div class="post">
+
+    <div class="post-header">
+        <h1 class="title">
+            <a href="/2017/11/18/guide-to-using-super/">
+                Guide to Using Super()
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2017-11-18</span>
+            
+            
+            
+        </div>
+    </div>
+
+    <div class="content">
+
+        <!-- Gallery -->
+        
+
+        <!-- Post Content -->
+        <h2 id="Python’s-super-considered-super"><a href="#Python’s-super-considered-super" class="headerlink" title="Python’s super() considered super!"></a>Python’s super() considered super!</h2><p>If you aren’t wowed by Python’s super() builtin, chances are you don’t really know what it is capable of doing or how to use it effectively.</p>
+<p>Much has been written about super() and much of that writing has been a failure. This article seeks to improve on the situation by:</p>
+<ul>
+<li>providing practical use cases</li>
+<li>giving a clear mental model of how it works</li>
+<li>showing the tradecraft for getting it to work every time</li>
+<li>concrete advice for building classes that use super()</li>
+<li>favoring real examples over abstract ABCD <a href="http://en.wikipedia.org/wiki/Diamond_problem" target="_blank" rel="noopener">diamond diagrams</a>.</li>
+</ul>
+<p>The examples for this post are available in both <a href="http://code.activestate.com/recipes/577721-how-to-use-super-effectively-python-27-version/" target="_blank" rel="noopener">Python 2 syntax</a> and <a href="http://code.activestate.com/recipes/577720-how-to-use-super-effectively/" target="_blank" rel="noopener">Python 3 syntax</a>.</p>
+<p>Using Python 3 syntax, let’s start with a basic use case, a subclass for extending a method from one of the builtin classes:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">class LoggingDict(dict):</span><br><span class="line">    def __setitem__(self, key, value):</span><br><span class="line">        logging.info(&apos;Setting %r to %r&apos; % (key, value))</span><br><span class="line">        super().__setitem__(key, value)</span><br></pre></td></tr></table></figure>
+<p>This class has all the same capabilities as its parent, <em>dict</em>, but it extends the <strong>setitem</strong> method to make log entries whenever a key is updated. After making a log entry, the method uses super() to delegate the work for actually updating the dictionary with the key/value pair.</p>
+<p>Before super() was introduced, we would have hardwired the call with <em>dict.<strong>setitem</strong>(self, key, value)</em>. However, super() is better because it is a computed indirect reference.</p>
+<p>One benefit of indirection is that we don’t have to specify the delegate class by name. If you edit the source code to switch the base class to some other mapping, the super() reference will automatically follow. You have a single source of truth:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">class LoggingDict(SomeOtherMapping):            # new base class</span><br><span class="line">    def __setitem__(self, key, value):</span><br><span class="line">        logging.info(&apos;Setting %r to %r&apos; % (key, value))</span><br><span class="line">        super().__setitem__(key, value)         # no change needed</span><br></pre></td></tr></table></figure>
+<p>In addition to isolating changes, there is another major benefit to computed indirection, one that may not be familiar to people coming from static languages. Since the indirection is computed at runtime, we have the freedom to influence the calculation so that the indirection will point to some other class.</p>
+<p>The calculation depends on both the class where super is called and on the instance’s tree of ancestors. The first component, the class where super is called, is determined by the source code for that class. In our example, super() is called in the <em>LoggingDict.<strong>setitem</strong></em> method. That component is fixed. The second and more interesting component is variable (we can create new subclasses with a rich tree of ancestors).</p>
+<p>Let’s use this to our advantage to construct a logging ordered dictionary without modifying our existing classes:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">class LoggingOD(LoggingDict, collections.OrderedDict):</span><br><span class="line">    pass</span><br></pre></td></tr></table></figure>
+<p>The ancestor tree for our new class is: <em>LoggingOD</em>,<em> LoggingDict</em>,<em> OrderedDict</em>,<em>dict</em>,<em> object</em>. For our purposes, the important result is that <em>OrderedDict</em> was inserted after <em>LoggingDict</em> and before <em>dict</em>! This means that the super() call in <em>LoggingDict.<strong>setitem</strong></em> now dispatches the key/value update to <em>OrderedDict</em> instead of <em>dict</em>.</p>
+<p>Think about that for a moment. We did not alter the source code for <em>LoggingDict</em>. Instead we built a subclass whose only logic is to compose two existing classes and control their search order.</p>
+<hr>
+<p><strong>Search Order</strong></p>
+<p>What I’ve been calling the search order or ancestor tree is officially known as the Method Resolution Order or MRO. It’s easy to view the MRO by printing the <strong>mro</strong> attribute:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; pprint(LoggingOD.__mro__)</span><br><span class="line">(&lt;class &apos;__main__.LoggingOD&apos;&gt;,</span><br><span class="line"> &lt;class &apos;__main__.LoggingDict&apos;&gt;,</span><br><span class="line"> &lt;class &apos;collections.OrderedDict&apos;&gt;,</span><br><span class="line"> &lt;class &apos;dict&apos;&gt;,</span><br><span class="line"> &lt;class &apos;object&apos;&gt;)</span><br></pre></td></tr></table></figure>
+<p>If our goal is to create a subclass with an MRO to our liking, we need to know how it is calculated. The basics are simple. The sequence includes the class, its base classes, and the base classes of those bases and so on until reaching <em>object</em> which is the root class of all classes. The sequence is ordered so that a class always appears before its parents, and if there are multiple parents, they keep the same order as the tuple of base classes.</p>
+<p>The MRO shown above is the one order that follows from those constraints:</p>
+<ul>
+<li>LoggingOD precedes its parents, LoggingDict and OrderedDict</li>
+<li>LoggingDict precedes OrderedDict because LoggingOD.<strong>bases</strong> is (LoggingDict, OrderedDict)</li>
+<li>LoggingDict precedes its parent which is dict</li>
+<li>OrderedDict precedes its parent which is dict</li>
+<li>dict precedes its parent which is object</li>
+</ul>
+<p>The process of solving those constraints is known as linearization. There are a number of good papers on the subject, but to create subclasses with an MRO to our liking, we only need to know the two constraints: children precede their parents and the order of appearance in <em><strong>bases</strong></em> is respected.</p>
+<hr>
+<p><strong>Practical Advice</strong></p>
+<p>super() is in the business of delegating method calls to some class in the instance’s ancestor tree. For reorderable method calls to work, the classes need to be designed cooperatively. This presents three easily solved practical issues:</p>
+<ul>
+<li>the method being called by super() needs to exist</li>
+<li>the caller and callee need to have a matching argument signature</li>
+<li>and every occurrence of the method needs to use super()</li>
+</ul>
+<p>1) Let’s first look at strategies for getting the caller’s arguments to match the signature of the called method. This is a little more challenging than traditional method calls where the callee is known in advance. With super(), the callee is not known at the time a class is written (because a subclass written later may introduce new classes into the MRO).</p>
+<p>One approach is to stick with a fixed signature using positional arguments. This works well with methods like <strong>setitem</strong> which have a fixed signature of two arguments, a key and a value. This technique is shown in the <em>LoggingDict</em> example where <strong>setitem</strong> has the same signature in both <em>LoggingDict</em> and <em>dict</em>.</p>
+<p>A more flexible approach is to have every method in the ancestor tree cooperatively designed to accept keyword arguments and a keyword-arguments dictionary, to remove any arguments that it needs, and to forward the remaining arguments using **kwds, eventually leaving the dictionary empty for the final call in the chain.</p>
+<p>Each level strips-off the keyword arguments that it needs so that the final empty dict can be sent to a method that expects no arguments at all (for example, <em>object.<strong>init</strong></em> expects zero arguments):</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">class Shape:</span><br><span class="line">    def __init__(self, shapename, **kwds):</span><br><span class="line">        self.shapename = shapename</span><br><span class="line">        super().__init__(**kwds)        </span><br><span class="line"></span><br><span class="line">class ColoredShape(Shape):</span><br><span class="line">    def __init__(self, color, **kwds):</span><br><span class="line">        self.color = color</span><br><span class="line">        super().__init__(**kwds)</span><br><span class="line"></span><br><span class="line">cs = ColoredShape(color=&apos;red&apos;, shapename=&apos;circle&apos;)</span><br></pre></td></tr></table></figure>
+<p>2) Having looked at strategies for getting the caller/callee argument patterns to match, let’s now look at how to make sure the target method exists.</p>
+<p>The above example shows the simplest case. We know that <em>object</em> has an <strong>init</strong> method and that <em>object</em> is always the last class in the MRO chain, so any sequence of calls to <em>super().<strong>init</strong></em> is guaranteed to end with a call to <em>object.<strong>init</strong></em> method. In other words, we’re guaranteed that the target of the super() call is guaranteed to exist and won’t fail with an <em>AttributeError</em>.</p>
+<p>For cases where <em>object</em> doesn’t have the method of interest (a draw() method for example), we need to write a root class that is guaranteed to be called before <em>object</em>. The responsibility of the root class is simply to eat the method call without making a forwarding call using super().</p>
+<p><em>Root.draw</em> can also employ <a href="http://en.wikipedia.org/wiki/Defensive_programming" target="_blank" rel="noopener">defensive programming</a> using an assertion to ensure it isn’t masking some other draw() method later in the chain.  This could happen if a subclass erroneously incorporates a class that has a draw() method but doesn’t inherit from <em>Root</em>.:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">class Root:</span><br><span class="line">    def draw(self):</span><br><span class="line">        # the delegation chain stops here</span><br><span class="line">        assert not hasattr(super(), &apos;draw&apos;)</span><br><span class="line"></span><br><span class="line">class Shape(Root):</span><br><span class="line">    def __init__(self, shapename, **kwds):</span><br><span class="line">        self.shapename = shapename</span><br><span class="line">        super().__init__(**kwds)</span><br><span class="line">    def draw(self):</span><br><span class="line">        print(&apos;Drawing.  Setting shape to:&apos;, self.shapename)</span><br><span class="line">        super().draw()</span><br><span class="line"></span><br><span class="line">class ColoredShape(Shape):</span><br><span class="line">    def __init__(self, color, **kwds):</span><br><span class="line">        self.color = color</span><br><span class="line">        super().__init__(**kwds)</span><br><span class="line">    def draw(self):</span><br><span class="line">        print(&apos;Drawing.  Setting color to:&apos;, self.color)</span><br><span class="line">        super().draw()</span><br><span class="line"></span><br><span class="line">cs = ColoredShape(color=&apos;blue&apos;, shapename=&apos;square&apos;)</span><br><span class="line">cs.draw()</span><br></pre></td></tr></table></figure>
+<p>If subclasses want to inject other classes into the MRO, those other classes also need to inherit from <em>Root</em> so that no path for calling draw() can reach <em>object</em> without having been stopped by <em>Root.draw</em>. This should be clearly documented so that someone writing new cooperating classes will know to subclass from <em>Root</em>. This restriction is not much different than Python’s own requirement that all new exceptions must inherit from <em>BaseException</em>.</p>
+<p>3) The techniques shown above assure that super() calls a method that is known to exist and that the signature will be correct; however, we’re still relying on super() being called at each step so that the chain of delegation continues unbroken. This is easy to achieve if we’re designing the classes cooperatively – just add a super() call to every method in the chain.</p>
+<p>The three techniques listed above provide the means to design cooperative classes that can be composed or reordered by subclasses.</p>
+<hr>
+<p><strong>How to Incorporate a Non-cooperative Class</strong></p>
+<p>Occasionally, a subclass may want to use cooperative multiple inheritance techniques with a third-party class that wasn’t designed for it (perhaps its method of interest doesn’t use super() or perhaps the class doesn’t inherit from the root class). This situation is easily remedied by creating an <a href="http://en.wikipedia.org/wiki/Adapter_pattern" target="_blank" rel="noopener">adapter class</a> that plays by the rules.</p>
+<p>For example, the following <em>Moveable</em> class does not make super() calls, and it has an <strong>init</strong>() signature that is incompatible with <em>object.<strong>init</strong></em>, and it does not inherit from <em>Root</em>:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">class Moveable:</span><br><span class="line">    def __init__(self, x, y):</span><br><span class="line">        self.x = x</span><br><span class="line">        self.y = y</span><br><span class="line">    def draw(self):</span><br><span class="line">        print(&apos;Drawing at position:&apos;, self.x, self.y)</span><br></pre></td></tr></table></figure>
+<p>If we want to use this class with our cooperatively designed <em>ColoredShape</em>hierarchy, we need to make an adapter with the requisite super() calls:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">class MoveableAdapter(Root):</span><br><span class="line">    def __init__(self, x, y, **kwds):</span><br><span class="line">        self.movable = Moveable(x, y)</span><br><span class="line">        super().__init__(**kwds)</span><br><span class="line">    def draw(self):</span><br><span class="line">        self.movable.draw()</span><br><span class="line">        super().draw()</span><br><span class="line"></span><br><span class="line">class MovableColoredShape(ColoredShape, MoveableAdapter):</span><br><span class="line">    pass</span><br><span class="line"></span><br><span class="line">MovableColoredShape(color=&apos;red&apos;, shapename=&apos;triangle&apos;,</span><br><span class="line">                    x=10, y=20).draw()</span><br></pre></td></tr></table></figure>
+<hr>
+<p><strong>Complete Example – Just for Fun</strong></p>
+<p>In Python 2.7 and 3.2, the collections module has both a <em>Counter</em> class and an <em>OrderedDict</em> class. Those classes are easily composed to make an <em>OrderedCounter</em>:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">from collections import Counter, OrderedDict</span><br><span class="line"></span><br><span class="line">class OrderedCounter(Counter, OrderedDict):</span><br><span class="line">     &apos;Counter that remembers the order elements are first seen&apos;</span><br><span class="line">     def __repr__(self):</span><br><span class="line">         return &apos;%s(%r)&apos; % (self.__class__.__name__,</span><br><span class="line">                            OrderedDict(self))</span><br><span class="line">     def __reduce__(self):</span><br><span class="line">         return self.__class__, (OrderedDict(self),)</span><br><span class="line"></span><br><span class="line">oc = OrderedCounter(&apos;abracadabra&apos;)</span><br></pre></td></tr></table></figure>
+<hr>
+<p><strong>Notes and References</strong></p>
+<p><strong>*</strong> When subclassing a builtin such as dict(), it is often necessary to override or extend multiple methods at a time. In the above examples, the <strong>setitem</strong> extension isn’t used by other methods such as <em>dict.update</em>, so it may be necessary to extend those also. This requirement isn’t unique to super(); rather, it arises whenever builtins are subclassed.</p>
+<p><strong>*</strong> If a class relies on one parent class preceding another (for example, <em>LoggingOD</em> depends on <em>LoggingDict</em> coming before <em>OrderedDict</em> which comes before <em>dict</em>), it is easy to add assertions to validate and document the intended method resolution order:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">position = LoggingOD.__mro__.index</span><br><span class="line">assert position(LoggingDict) &lt; position(OrderedDict)</span><br><span class="line">assert position(OrderedDict) &lt; position(dict)</span><br></pre></td></tr></table></figure>
+<p><strong>*</strong> Good write-ups for linearization algorithms can be found at <a href="http://www.python.org/download/releases/2.3/mro/" target="_blank" rel="noopener">Python MRO documentation</a> and at <a href="http://en.wikipedia.org/wiki/C3_linearization" target="_blank" rel="noopener">Wikipedia entry for C3 Linearization</a>.</p>
+<p><strong>*</strong> The <a href="http://en.wikipedia.org/wiki/Dylan_(programming_language" target="_blank" rel="noopener">Dylan programming language</a>) has a <em>next-method</em> construct that works like Python’s super(). See <a href="http://www.opendylan.org/books/dpg/db_347.html" target="_blank" rel="noopener">Dylan’s class docs</a> for a brief write-up of how it behaves.</p>
+<p><strong>*</strong> The Python 3 version of super() is used in this post. The full working source code can be found at:  <a href="http://code.activestate.com/recipes/577720-how-to-use-super-effectively/" target="_blank" rel="noopener">Recipe 577720</a>. The Python 2 syntax differs in that the <em>type</em> and <em>object</em> arguments to super() are explicit rather than implicit. Also, the Python 2 version of super() only works with new-style classes (those that explicitly inherit from <em>object</em> or other builtin type). The full working source code using Python 2 syntax is at <a href="http://code.activestate.com/recipes/577721-how-to-use-super-effectively-python-27-version/" target="_blank" rel="noopener">Recipe 577721</a>.</p>
+<p><a href="https://rhettinger.wordpress.com/2011/05/26/super-considered-super/" target="_blank" rel="noopener"><strong>原文链接</strong></a></p>
+
+    </div>
+
+    
+
+    
+        <div class="post-tags">
+            <i class="fa fa-tags" aria-hidden="true"></i>
+            <a href="/tags/Python/">#Python</a>
+        </div>
+    
+
+    <!-- Comments -->
+    
+
+</div>
+        </section>
+
+    </div>
+</div>
+
+
+</div>
+
+<!-- Footer -->
+<div class="push"></div>
+
+<footer class="footer-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 footer-about">
+                <h2>About</h2>
+                <p>
+                    This theme was developed by <a href="https://github.com/klugjo">Jonathan Klughertz</a>. The source code is available on Github. Create Websites. Make Magic.
+                </p>
+            </div>
+            
+    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 recent-posts">
+        <h2>Recent Posts</h2>
+        <ul>
+            
+            <li>
+                <a class="footer-post" href="/2018/01/16/hello-world/">Hello World</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2018/01/14/CSV-files/">CSV Files</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2018/01/11/python爬虫较为常用packages/">Python爬虫较为常用packages</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2018/01/08/Regex-syntax/">Regex Syntax</a>
+            </li>
+            
+        </ul>
+    </div>
+
+
+
+            
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ul class="list-inline footer-social-icons">
+                    
+                    <li class="list-inline-item">
+                        <a href="https://github.com/klugjo/hexo-theme-alpha-dust">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-github"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://twitter.com/?lang=en">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-twitter"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-facebook"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://www.instagram.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-instagram"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://dribbble.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-dribbble"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://plus.google.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-google-plus"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://www.behance.net/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-behance"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://500px.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-500px"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="mailto:test@example.com">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-envelope-o"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="\#">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-rss"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="footer-copyright">
+                    @Untitled. All right reserved | Design & Hexo <a href="http://www.codeblocq.com/">Jonathan Klughertz</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- After footer scripts -->
+
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Tween Max -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Custom JavaScript -->
+<script src="/js/main.js"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>

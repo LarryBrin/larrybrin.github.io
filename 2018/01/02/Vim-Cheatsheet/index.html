@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="Exiting(链接地址)
+
+
+:qa
+Close all files
+
+
+
+
+:qa!
+Close all files, abandon changes
+
+
+:w
+Save
+
+
+:wq / :x
+Save and close file
+
+
+:q
+Close file
+
+
+:q!
+Close fil">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="hongyuan shao">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Vim Cheatsheet"/>
+    
+
+    <!--Open Graph Description-->
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="hongyuan&#39;s blog"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+    <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>Vim Cheatsheet - hongyuan&#39;s blog</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Google Analytics -->
+    
+
+
+</head>
+
+
+<body>
+
+<div class="bg-gradient"></div>
+<div class="bg-pattern"></div>
+
+<!-- Menu -->
+<!--Menu Links and Overlay-->
+<div class="menu-bg">
+    <div class="menu-container">
+        <ul>
+            
+            <li class="menu-item">
+                <a href="/">
+                    Home
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/archives">
+                    Archives
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/about.html">
+                    About
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/tags">
+                    Tags
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/categories">
+                    Categories
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/contact.html">
+                    Contact
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+<!--Hamburger Icon-->
+<nav>
+    <a href="#menu"></a>
+</nav>
+
+<div class="container">
+
+    <!-- Main Content -->
+    <div class="row">
+    <div class="col-sm-12">
+
+        <!--Title and Logo-->
+        <header>
+    <div class="logo">
+        <a href="/"><i class="logo-icon fa fa-cube" aria-hidden="true"></i></a>
+        
+    </div>
+</header>
+
+        <section class="main">
+            
+<div class="post">
+
+    <div class="post-header">
+        <h1 class="title">
+            <a href="/2018/01/02/Vim-Cheatsheet/">
+                Vim Cheatsheet
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2018-01-02</span>
+            
+            
+            
+        </div>
+    </div>
+
+    <div class="content">
+
+        <!-- Gallery -->
+        
+
+        <!-- Post Content -->
+        <h3 id="Exiting-链接地址"><a href="#Exiting-链接地址" class="headerlink" title="Exiting(链接地址)"></a>Exiting(<a href="https://devhints.io/vim" target="_blank" rel="noopener">链接地址</a>)</h3><table>
+<thead>
+<tr>
+<th><code>:qa</code></th>
+<th>Close all files</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>:qa!</code></td>
+<td>Close all files, abandon changes</td>
+</tr>
+<tr>
+<td><code>:w</code></td>
+<td>Save</td>
+</tr>
+<tr>
+<td><code>:wq</code> <em>/</em> <code>:x</code></td>
+<td>Save and close file</td>
+</tr>
+<tr>
+<td><code>:q</code></td>
+<td>Close file</td>
+</tr>
+<tr>
+<td><code>:q!</code></td>
+<td>Close file, abandon changes</td>
+</tr>
+<tr>
+<td><code>ZZ</code></td>
+<td>Save and quit</td>
+</tr>
+<tr>
+<td><code>ZQ</code></td>
+<td>Quit without checking changes</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Navigating"><a href="#Navigating" class="headerlink" title="Navigating"></a>Navigating</h3><table>
+<thead>
+<tr>
+<th><code>h</code> <code>j</code> <code>k</code> <code>l</code></th>
+<th>Arrow keys</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;C-U&gt;</code> <em>/</em> <code>&lt;C-D&gt;</code></td>
+<td>Page up/page down</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Words"><a href="#Words" class="headerlink" title="Words"></a>Words</h4><table>
+<thead>
+<tr>
+<th><code>b</code> <em>/</em> <code>w</code></th>
+<th>Previous/next word</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>e</code> <em>/</em> <code>ge</code></td>
+<td>Previous/next end of word</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Line"><a href="#Line" class="headerlink" title="Line"></a>Line</h4><table>
+<thead>
+<tr>
+<th><code>0</code> <em>(zero)</em></th>
+<th>Start of line</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>^</code></td>
+<td>Start of line <em>(after whitespace)</em></td>
+</tr>
+<tr>
+<td><code>$</code></td>
+<td>End of line</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Document"><a href="#Document" class="headerlink" title="Document"></a>Document</h4><table>
+<thead>
+<tr>
+<th><code>gg</code></th>
+<th>First line</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>G</code></td>
+<td>Last line</td>
+</tr>
+<tr>
+<td><code>:n</code></td>
+<td>Go to line <code>n</code></td>
+</tr>
+<tr>
+<td><code>nG</code></td>
+<td>Go to line <code>n</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Editing"><a href="#Editing" class="headerlink" title="Editing"></a>Editing</h3><table>
+<thead>
+<tr>
+<th><code>a</code></th>
+<th>Append</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>i</code></td>
+<td>Insert</td>
+</tr>
+<tr>
+<td><code>o</code></td>
+<td>Next line</td>
+</tr>
+<tr>
+<td><code>O</code></td>
+<td>Previous line</td>
+</tr>
+<tr>
+<td><code>s</code></td>
+<td>Delete char and insert</td>
+</tr>
+<tr>
+<td><code>S</code></td>
+<td>Delete line and insert</td>
+</tr>
+<tr>
+<td><code>C</code></td>
+<td>Delete until end of line and insert</td>
+</tr>
+<tr>
+<td><code>r</code></td>
+<td>Replace one character</td>
+</tr>
+<tr>
+<td><code>R</code></td>
+<td>Enter Replace mode</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Exiting-insert-mode"><a href="#Exiting-insert-mode" class="headerlink" title="Exiting insert mode"></a>Exiting insert mode</h3><table>
+<thead>
+<tr>
+<th><code>Esc</code> <em>/</em> <code>&lt;C-[&gt;</code></th>
+<th>Exit insert mode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;C-C&gt;</code></td>
+<td>Exit insert mode, and abort current command</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Clipboard"><a href="#Clipboard" class="headerlink" title="Clipboard"></a>Clipboard</h3><table>
+<thead>
+<tr>
+<th><code>x</code></th>
+<th>Delete character</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>dd</code></td>
+<td>Delete line <em>(Cut)</em></td>
+</tr>
+<tr>
+<td><code>yy</code></td>
+<td>Yank line <em>(Copy)</em></td>
+</tr>
+<tr>
+<td><code>p</code></td>
+<td>Paste</td>
+</tr>
+<tr>
+<td><code>P</code></td>
+<td>Paste before</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Visual-mode"><a href="#Visual-mode" class="headerlink" title="Visual mode"></a>Visual mode</h3><table>
+<thead>
+<tr>
+<th><code>v</code></th>
+<th>Enter visual mode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>V</code></td>
+<td>Enter visual line mode</td>
+</tr>
+<tr>
+<td><code>&lt;C-V&gt;</code></td>
+<td>Enter visual block mode</td>
+</tr>
+</tbody>
+</table>
+<h4 id="In-visual-mode"><a href="#In-visual-mode" class="headerlink" title="In visual mode"></a>In visual mode</h4><table>
+<thead>
+<tr>
+<th><code>d</code> <em>/</em> <code>x</code></th>
+<th>Delete selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>s</code></td>
+<td>Replace selection</td>
+</tr>
+<tr>
+<td><code>y</code></td>
+<td>Yank selection <em>(Copy)</em></td>
+</tr>
+</tbody>
+</table>
+<p>See <a href="https://devhints.io/vim#operators" target="_blank" rel="noopener">Operators</a> for other things you can do.</p>
+<h2 id="Operators"><a href="#Operators" class="headerlink" title="Operators"></a>Operators</h2><h3 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h3><p>Operators let you operate in a range of text (defined by <em>motion</em>). These are preformed in normal mode.</p>
+<table>
+<thead>
+<tr>
+<th><code>d</code></th>
+<th><code>w</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Operator</td>
+<td>Motion</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Operators-list"><a href="#Operators-list" class="headerlink" title="Operators list"></a>Operators list</h3><table>
+<thead>
+<tr>
+<th><code>d</code></th>
+<th>Delete</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>y</code></td>
+<td>Yank <em>(copy)</em></td>
+</tr>
+<tr>
+<td><code>c</code></td>
+<td>Change <em>(delete then insert)</em></td>
+</tr>
+<tr>
+<td><code>&gt;</code></td>
+<td>Indent right</td>
+</tr>
+<tr>
+<td><code>&lt;</code></td>
+<td>Indent left</td>
+</tr>
+<tr>
+<td><code>g~</code></td>
+<td>Swap case</td>
+</tr>
+<tr>
+<td><code>gU</code></td>
+<td>Uppercase</td>
+</tr>
+<tr>
+<td><code>gu</code></td>
+<td>Lowercase</td>
+</tr>
+<tr>
+<td><code>!</code></td>
+<td>Filter through external program</td>
+</tr>
+</tbody>
+</table>
+<p>See <code>:help operator</code></p>
+<h3 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h3><p>Combine operators with <em>motions</em> to use them.</p>
+<table>
+<thead>
+<tr>
+<th><code>d</code><em>d</em></th>
+<th><em>(repeat the letter)</em> Delete current line</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>d</code><em>w</em></td>
+<td>Delete to next word</td>
+</tr>
+<tr>
+<td><code>d</code><em>b</em></td>
+<td>Delete to beginning of word</td>
+</tr>
+<tr>
+<td><em>2</em><code>dd</code></td>
+<td>Delete 2 lines</td>
+</tr>
+<tr>
+<td><code>d</code><em>ip</em></td>
+<td>Delete a text object <em>(inside paragraph)</em></td>
+</tr>
+<tr>
+<td><em>(in visual mode)</em> <code>d</code></td>
+<td>Delete selection</td>
+</tr>
+</tbody>
+</table>
+<p>See: <code>:help motion.txt</code></p>
+<h2 id="Text-objects"><a href="#Text-objects" class="headerlink" title="Text objects"></a>Text objects</h2><h3 id="Usage-1"><a href="#Usage-1" class="headerlink" title="Usage"></a>Usage</h3><p>Text objects let you operate (with an <em>operator</em>) in or around text blocks (<em>objects</em>).</p>
+<table>
+<thead>
+<tr>
+<th><code>v</code></th>
+<th><code>i</code></th>
+<th><code>p</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Operator</td>
+<td>[i]nside or [a]round</td>
+<td>Text object</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Text-objects-1"><a href="#Text-objects-1" class="headerlink" title="Text objects"></a>Text objects</h3><table>
+<thead>
+<tr>
+<th><code>p</code></th>
+<th>Paragraph</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>w</code></td>
+<td>Word</td>
+</tr>
+<tr>
+<td><code>s</code></td>
+<td>Sentence</td>
+</tr>
+<tr>
+<td><code>[</code> <code>(</code> <code>{</code> <code>&lt;</code></td>
+<td>A [], (), or {} block</td>
+</tr>
+<tr>
+<td><code>&#39;</code> <code>&quot;</code> <figure class="highlight plain"><figcaption><span>A quoted string       |</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br></pre></td><td class="code"><pre><span class="line">| `b`             | A block [(            |</span><br><span class="line">| `B`             | A block in [&#123;         |</span><br><span class="line">| `t`             | A XML tag block       |</span><br><span class="line"></span><br><span class="line">### Examples</span><br><span class="line"></span><br><span class="line">| `vip`       | Select paragraph                   |</span><br><span class="line">| ----------- | ---------------------------------- |</span><br><span class="line">| `vipipipip` | Select more                        |</span><br><span class="line">| `yip`       | Yank inner paragraph               |</span><br><span class="line">| `yap`       | Yank paragraph (including newline) |</span><br><span class="line">| `dip`       | Delete inner paragraph             |</span><br><span class="line">| `cip`       | Change inner paragraph             |</span><br><span class="line"></span><br><span class="line">See [Operators](https://devhints.io/vim#operators) for other things you can do.</span><br><span class="line"></span><br><span class="line">## Misc</span><br><span class="line"></span><br><span class="line">### Folds</span><br><span class="line"></span><br><span class="line">| `zo` */* `zO` | Open                         |</span><br><span class="line">| ------------- | ---------------------------- |</span><br><span class="line">| `zc` */* `zC` | Close                        |</span><br><span class="line">| `za` */* `zA` | Toggle                       |</span><br><span class="line">| `zv`          | Open folds for this line     |</span><br><span class="line">| `zM`          | Close all                    |</span><br><span class="line">| `zR`          | Open all                     |</span><br><span class="line">| `zm`          | Fold more *(foldlevel += 1)* |</span><br><span class="line">| `zr`          | Fold less *(foldlevel -= 1)* |</span><br><span class="line">| `zx`          | Update folds                 |</span><br><span class="line"></span><br><span class="line">Uppercase ones are recursive (eg, `zO` is open recursively).</span><br><span class="line"></span><br><span class="line">### Navigation</span><br><span class="line"></span><br><span class="line">| `[(` `[&#123;` `[&lt;` | previous `(` or `&#123;` or `&lt;` |</span><br><span class="line">| -------------- | -------------------------- |</span><br><span class="line">| `])`           | next                       |</span><br><span class="line">| `[m`           | previous method start      |</span><br><span class="line">| `[M`           | previous method end        |</span><br><span class="line"></span><br><span class="line">### Jumping</span><br><span class="line"></span><br><span class="line">| `&lt;C-O&gt;` | Go back to previous location |</span><br><span class="line">| ------- | ---------------------------- |</span><br><span class="line">| `&lt;C-I&gt;` | Go forward                   |</span><br><span class="line">| `gf`    | go to file in cursor         |</span><br><span class="line"></span><br><span class="line">### Counters</span><br><span class="line"></span><br><span class="line">| `&lt;C-A&gt;` | increment number |</span><br><span class="line">| ------- | ---------------- |</span><br><span class="line">| `&lt;C-X&gt;` | decrement        |</span><br><span class="line"></span><br><span class="line">### Windows</span><br><span class="line"></span><br><span class="line">| `z&#123;height&#125;&lt;Cr&gt;` | Resize pane to `&#123;height&#125;` lines tall |</span><br><span class="line">| --------------- | ------------------------------------ |</span><br><span class="line">|                 |                                      |</span><br><span class="line"></span><br><span class="line">### Tags</span><br><span class="line"></span><br><span class="line">| `:tag Classname`     | Jump to first definition of Classname    |</span><br><span class="line">| -------------------- | ---------------------------------------- |</span><br><span class="line">| `&lt;C-]&gt;`              | Jump to definition                       |</span><br><span class="line">| `g]`                 | See all definitions                      |</span><br><span class="line">| `&lt;C-T&gt;`              | Go back to last tag                      |</span><br><span class="line">| `&lt;C-O&gt; &lt;C-I&gt;`        | Back/forward                             |</span><br><span class="line">| `:tselect Classname` | Find definitions of Classname            |</span><br><span class="line">| `:tjump Classname`   | Find definitions of Classname (auto-select 1st) |</span><br><span class="line"></span><br><span class="line">### Case</span><br><span class="line"></span><br><span class="line">| `~`   | toggle case (Case =&gt; cASE)           |</span><br><span class="line">| ----- | ------------------------------------ |</span><br><span class="line">| `gU`  | uppercase                            |</span><br><span class="line">| `gu`  | lowercase                            |</span><br><span class="line">| `gUU` | uppercase current line (also `gUgU`) |</span><br><span class="line">| `guu` | lowercase current line (also `gugu`) |</span><br><span class="line"></span><br><span class="line">Do these in visual or normal mode.</span><br><span class="line"></span><br><span class="line">### Marks</span><br><span class="line"></span><br><span class="line">| ``^` | Last position of cursor in insert mode   |</span><br><span class="line">| ---- | ---------------------------------------- |</span><br><span class="line">| ``.` | Last change                              |</span><br><span class="line">| ```` | Last jump                                |</span><br><span class="line">| `ma` | Mark this cursor position as `a`         |</span><br><span class="line">| ``a` | Jump to the cursor position `a`          |</span><br><span class="line">| `&apos;a` | Jump to the beginning of the line with position `a` |</span><br><span class="line"></span><br><span class="line">### Misc</span><br><span class="line"></span><br><span class="line">| `.`  | repeat last command                      |</span><br><span class="line">| ---- | ---------------------------------------- |</span><br><span class="line">| `]p` | paste under the current indentation level |</span><br><span class="line">| `zz` | Center this line                         |</span><br><span class="line"></span><br><span class="line">### Command line</span><br><span class="line"></span><br><span class="line">| `&lt;C-R&gt;&lt;C-W&gt;` | insert current word into the command line |</span><br><span class="line">| ------------ | ---------------------------------------- |</span><br><span class="line">| `&lt;C-R&gt;&quot;`     | paste from “ register                    |</span><br><span class="line"></span><br><span class="line">### Text alignment</span><br></pre></td></tr></table></figure></td>
+</tr>
+</tbody>
+</table>
+<p>:center [width]<br>:right [width]<br>:left</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">See `:help formatting`</span><br><span class="line"></span><br><span class="line">### Calculator</span><br></pre></td></tr></table></figure>
+<p><c-r>=128/2</c-r></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">Do this in insert mode.</span><br><span class="line"></span><br><span class="line">### Exiting with an error</span><br></pre></td></tr></table></figure>
+<p>:cq<br>:cquit</p>
+<p>```</p>
+<p>Works like <code>:qa</code>, but throws an error. Great for aborting Git commands.</p>
+
+    </div>
+
+    
+
+    
+        <div class="post-tags">
+            <i class="fa fa-tags" aria-hidden="true"></i>
+            <a href="/tags/vim/">#vim</a>
+        </div>
+    
+
+    <!-- Comments -->
+    
+
+</div>
+        </section>
+
+    </div>
+</div>
+
+
+</div>
+
+<!-- Footer -->
+<div class="push"></div>
+
+<footer class="footer-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 footer-about">
+                <h2>About</h2>
+                <p>
+                    This theme was developed by <a href="https://github.com/klugjo">Jonathan Klughertz</a>. The source code is available on Github. Create Websites. Make Magic.
+                </p>
+            </div>
+            
+    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 recent-posts">
+        <h2>Recent Posts</h2>
+        <ul>
+            
+            <li>
+                <a class="footer-post" href="/2018/01/16/hello-world/">Hello World</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2018/01/14/CSV-files/">CSV Files</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2018/01/11/python爬虫较为常用packages/">Python爬虫较为常用packages</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2018/01/08/Regex-syntax/">Regex Syntax</a>
+            </li>
+            
+        </ul>
+    </div>
+
+
+
+            
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ul class="list-inline footer-social-icons">
+                    
+                    <li class="list-inline-item">
+                        <a href="https://github.com/klugjo/hexo-theme-alpha-dust">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-github"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://twitter.com/?lang=en">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-twitter"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-facebook"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://www.instagram.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-instagram"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://dribbble.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-dribbble"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://plus.google.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-google-plus"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://www.behance.net/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-behance"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://500px.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-500px"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="mailto:test@example.com">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-envelope-o"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="\#">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-rss"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="footer-copyright">
+                    @Untitled. All right reserved | Design & Hexo <a href="http://www.codeblocq.com/">Jonathan Klughertz</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- After footer scripts -->
+
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Tween Max -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Custom JavaScript -->
+<script src="/js/main.js"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>

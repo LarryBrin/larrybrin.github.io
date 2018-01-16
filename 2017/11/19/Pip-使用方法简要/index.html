@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="You can install, upgrade, and remove packages using a program called pip. By default pip will install packages from the Python Package Index, &amp;lt;http">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="hongyuan shao">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Pip 使用方法简要"/>
+    
+
+    <!--Open Graph Description-->
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="hongyuan&#39;s blog"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+    <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>Pip 使用方法简要 - hongyuan&#39;s blog</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Google Analytics -->
+    
+
+
+</head>
+
+
+<body>
+
+<div class="bg-gradient"></div>
+<div class="bg-pattern"></div>
+
+<!-- Menu -->
+<!--Menu Links and Overlay-->
+<div class="menu-bg">
+    <div class="menu-container">
+        <ul>
+            
+            <li class="menu-item">
+                <a href="/">
+                    Home
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/archives">
+                    Archives
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/about.html">
+                    About
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/tags">
+                    Tags
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/categories">
+                    Categories
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/contact.html">
+                    Contact
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+<!--Hamburger Icon-->
+<nav>
+    <a href="#menu"></a>
+</nav>
+
+<div class="container">
+
+    <!-- Main Content -->
+    <div class="row">
+    <div class="col-sm-12">
+
+        <!--Title and Logo-->
+        <header>
+    <div class="logo">
+        <a href="/"><i class="logo-icon fa fa-cube" aria-hidden="true"></i></a>
+        
+    </div>
+</header>
+
+        <section class="main">
+            
+<div class="post">
+
+    <div class="post-header">
+        <h1 class="title">
+            <a href="/2017/11/19/Pip-使用方法简要/">
+                Pip 使用方法简要
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2017-11-19</span>
+            
+            
+            
+        </div>
+    </div>
+
+    <div class="content">
+
+        <!-- Gallery -->
+        
+
+        <!-- Post Content -->
+        <p>You can install, upgrade, and remove packages using a program called <strong>pip</strong>. By default <code>pip</code> will install packages from the Python Package Index, &lt;<a href="https://pypi.python.org/pypi" target="_blank" rel="noopener">https://pypi.python.org/pypi</a>&gt;. You can browse the Python Package Index by going to it in your web browser, or you can use <code>pip</code>’s limited search feature:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">(tutorial-env) $ pip search astronomy</span><br><span class="line">skyfield               - Elegant astronomy for Python</span><br><span class="line">gary                   - Galactic astronomy and gravitational dynamics.</span><br><span class="line">novas                  - The United States Naval Observatory NOVAS astronomy library</span><br><span class="line">astroobs               - Provides astronomy ephemeris to plan telescope observations</span><br><span class="line">PyAstronomy            - A collection of astronomy related tools for Python.</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<p><code>pip</code> has a number of subcommands: “search”, “install”, “uninstall”, “freeze”, etc. (Consult the <a href="../installing/index.html#installing-index">Installing Python Modules</a> guide for complete documentation for <code>pip</code>.)</p>
+<p>You can install the latest version of a package by specifying a package’s name:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">(tutorial-env) $ pip install novas</span><br><span class="line">Collecting novas</span><br><span class="line">  Downloading novas-3.1.1.3.tar.gz (136kB)</span><br><span class="line">Installing collected packages: novas</span><br><span class="line">  Running setup.py install for novas</span><br><span class="line">Successfully installed novas-3.1.1.3</span><br></pre></td></tr></table></figure>
+<p>You can also install a specific version of a package by giving the package name followed by <code>==</code> and the version number:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(tutorial-env) $ pip install requests==2.6.0</span><br><span class="line">Collecting requests==2.6.0</span><br><span class="line">  Using cached requests-2.6.0-py2.py3-none-any.whl</span><br><span class="line">Installing collected packages: requests</span><br><span class="line">Successfully installed requests-2.6.0</span><br></pre></td></tr></table></figure>
+<p>If you re-run this command, <code>pip</code> will notice that the requested version is already installed and do nothing. You can supply a different version number to get that version, or you can run <code>pip install --upgrade</code> to upgrade the package to the latest version:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">(tutorial-env) $ pip install --upgrade requests</span><br><span class="line">Collecting requests</span><br><span class="line">Installing collected packages: requests</span><br><span class="line">  Found existing installation: requests 2.6.0</span><br><span class="line">    Uninstalling requests-2.6.0:</span><br><span class="line">      Successfully uninstalled requests-2.6.0</span><br><span class="line">Successfully installed requests-2.7.0</span><br></pre></td></tr></table></figure>
+<p><code>pip uninstall</code> followed by one or more package names will remove the packages from the virtual environment.</p>
+<p><code>pip show</code> will display information about a particular package:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">(tutorial-env) $ pip show requests</span><br><span class="line">---</span><br><span class="line">Metadata-Version: 2.0</span><br><span class="line">Name: requests</span><br><span class="line">Version: 2.7.0</span><br><span class="line">Summary: Python HTTP for Humans.</span><br><span class="line">Home-page: http://python-requests.org</span><br><span class="line">Author: Kenneth Reitz</span><br><span class="line">Author-email: me@kennethreitz.com</span><br><span class="line">License: Apache 2.0</span><br><span class="line">Location: /Users/akuchling/envs/tutorial-env/lib/python3.4/site-packages</span><br><span class="line">Requires:</span><br></pre></td></tr></table></figure>
+<p><code>pip list</code> will display all of the packages installed in the virtual environment:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">(tutorial-env) $ pip list</span><br><span class="line">novas (3.1.1.3)</span><br><span class="line">numpy (1.9.2)</span><br><span class="line">pip (7.0.3)</span><br><span class="line">requests (2.7.0)</span><br><span class="line">setuptools (16.0)</span><br></pre></td></tr></table></figure>
+<p><code>pip freeze</code> will produce a similar list of the installed packages, but the output uses the format that <code>pip install</code> expects. A common convention is to put this list in a <code>requirements.txt</code> file:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(tutorial-env) $ pip freeze &gt; requirements.txt</span><br><span class="line">(tutorial-env) $ cat requirements.txt</span><br><span class="line">novas==3.1.1.3</span><br><span class="line">numpy==1.9.2</span><br><span class="line">requests==2.7.0</span><br></pre></td></tr></table></figure>
+<p>The <code>requirements.txt</code> can then be committed to version control and shipped as part of an application. Users can then install all the necessary packages with <code>install -r</code>:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">(tutorial-env) $ pip install -r requirements.txt</span><br><span class="line">Collecting novas==3.1.1.3 (from -r requirements.txt (line 1))</span><br><span class="line">  ...</span><br><span class="line">Collecting numpy==1.9.2 (from -r requirements.txt (line 2))</span><br><span class="line">  ...</span><br><span class="line">Collecting requests==2.7.0 (from -r requirements.txt (line 3))</span><br><span class="line">  ...</span><br><span class="line">Installing collected packages: novas, numpy, requests</span><br><span class="line">  Running setup.py install for novas</span><br><span class="line">Successfully installed novas-3.1.1.3 numpy-1.9.2 requests-2.7.0</span><br></pre></td></tr></table></figure>
+<p><code>pip</code> has many more options. Consult the <a href="../installing/index.html#installing-index">Installing Python Modules</a> guide for complete documentation for <code>pip</code>. When you’ve written a package and want to make it available on the Python Package Index, consult the <a href="../distributing/index.html#distributing-index">Distributing Python Modules</a> guide.</p>
+<p><a href="https://docs.python.org/3.6/tutorial/venv.html#managing-packages-with-pip" target="_blank" rel="noopener">From Python Tutorial</a></p>
+
+    </div>
+
+    
+
+    
+        <div class="post-tags">
+            <i class="fa fa-tags" aria-hidden="true"></i>
+            <a href="/tags/Python/">#Python</a>
+        </div>
+    
+
+    <!-- Comments -->
+    
+
+</div>
+        </section>
+
+    </div>
+</div>
+
+
+</div>
+
+<!-- Footer -->
+<div class="push"></div>
+
+<footer class="footer-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 footer-about">
+                <h2>About</h2>
+                <p>
+                    This theme was developed by <a href="https://github.com/klugjo">Jonathan Klughertz</a>. The source code is available on Github. Create Websites. Make Magic.
+                </p>
+            </div>
+            
+    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 recent-posts">
+        <h2>Recent Posts</h2>
+        <ul>
+            
+            <li>
+                <a class="footer-post" href="/2018/01/16/hello-world/">Hello World</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2018/01/14/CSV-files/">CSV Files</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2018/01/11/python爬虫较为常用packages/">Python爬虫较为常用packages</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2018/01/08/Regex-syntax/">Regex Syntax</a>
+            </li>
+            
+        </ul>
+    </div>
+
+
+
+            
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ul class="list-inline footer-social-icons">
+                    
+                    <li class="list-inline-item">
+                        <a href="https://github.com/klugjo/hexo-theme-alpha-dust">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-github"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://twitter.com/?lang=en">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-twitter"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-facebook"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://www.instagram.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-instagram"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://dribbble.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-dribbble"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://plus.google.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-google-plus"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://www.behance.net/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-behance"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://500px.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-500px"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="mailto:test@example.com">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-envelope-o"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="\#">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-rss"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="footer-copyright">
+                    @Untitled. All right reserved | Design & Hexo <a href="http://www.codeblocq.com/">Jonathan Klughertz</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- After footer scripts -->
+
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Tween Max -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Custom JavaScript -->
+<script src="/js/main.js"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
