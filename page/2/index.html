@@ -147,6 +147,63 @@
 
     <div class="post-header index">
         <h1 class="title">
+            <a href="/2017/12/28/Best-atom-plugins/">
+                Best Atom Plugins
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2017-12-28</span>
+            
+            
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <p><strong>转载地址：</strong> <a href="http://shanky.org/2017/01/11/atom-editor-for-python/" target="_blank" rel="noopener">Shashank Tiwari</a></p>
+<p><a href="https://atom.io/" target="_blank" rel="noopener">Atom</a> is a beautiful and customizable editor that can be leveraged gainfully for Python programming. Built on <a href="http://electron.atom.io/" target="_blank" rel="noopener">Electron</a>, a technology for building cross platform desktop apps with JavaScript, HTML, and CSS, Atom is, as Github says, “hackable”. Its support for plugins and add-ons via packages allows one to add customizations and newer capabilities beyond what comes out of the box.</p>
+<h2 id="Atom-Packages"><a href="#Atom-Packages" class="headerlink" title="Atom Packages"></a>Atom Packages</h2><p>The package system is at the heart of Atom’s design. Atom itself has a very lightweight core and most of its own default features, like the “Settings View”, are implemented via packages. The out of box comes with over 90 packages installed.</p>
+<p>Newer packages can be searched and installed via the “Install” tab in the “Settings View”. Look at Figure 1, which shows the “Install” tab.</p>
+<p><img src="http://shanky.org/assets/images/install_tab_in_the_settings_view.png" alt="img">Figure 1: Atom Settings View Install Tab</p>
+<blockquote>
+<p>These searchable Atom packages are published to the official Atom registry at <a href="https://atom.io/packages" target="_blank" rel="noopener">https://atom.io/packages</a>.</p>
+</blockquote>
+<h3 id="Installing-using-the-command-line"><a href="#Installing-using-the-command-line" class="headerlink" title="Installing using the command line"></a>Installing using the command line</h3><p>Atom comes with a command line utility named <em>apm</em>, short for atom package manager. Latest version of a package can be installed easily using the following command:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apm install &lt;package_name&gt;</span><br></pre></td></tr></table></figure>
+<p>This assumes you know the exact name of the package you want to install. If you are not sure of the exact name of the package then you can search for packages like so:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apm search &lt;possible_package_name&gt;</span><br></pre></td></tr></table></figure>
+<p>While installing the latest version of a package is desirable, you may need to install a specific older version. Its easy to install a specific version as follows:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apm install &lt;package_name&gt;@&lt;package_version&gt;</span><br></pre></td></tr></table></figure>
+<p>To view more information about a specific package, use:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apm view &lt;package_name&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="Atom-Packages-for-Python"><a href="#Atom-Packages-for-Python" class="headerlink" title="Atom Packages for Python"></a>Atom Packages for Python</h2><p>PEP8 (short for Python Enhancement Proposal 8) is the style guide for Python code. Pythonic code is optimized for readability. Clean, explicit, and simple code structure, design, and layout is preferred over complexity. PEP257 specifies docstring conventions. Docstrings are string literals that appear as the first statement in a Python function, module, class, or method definition. It serves as code comments and is also accessible at runtime via the “<strong>doc</strong>” attribute. Atom’s support for code linters can help you proactively check your code for errors and adherence to PEP8 and PEP257.</p>
+<p>Linter is an Atom package that provides a unified and consistent api for all atom linter plugins. Start by installing this package:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apm install linter</span><br></pre></td></tr></table></figure>
+<p>Next, piggyback on the Python packages to do the heavy lifting. Install flake8, the wrapper around PyFlakes, pycodestyle, and Mc Cabe script. <em>pip</em> is the most popular and widely used package manager for Python and using it is very easy. To install flake8 and flake8-pep257, use pip as follows:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip install flake8</span><br><span class="line">pip install flake8-pep257</span><br></pre></td></tr></table></figure>
+<p>Now that flake8 is available on your system, install linter-flake8. The linter-flake8 package is a flake8 provider for linter. It makes it possible for Atom linter to leverage flake8 for checking Python code for style adherence. Install linter-flake8 like so:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apm install linter-flake8</span><br></pre></td></tr></table></figure>
+<h2 id="Automating-Style-Corrections"><a href="#Automating-Style-Corrections" class="headerlink" title="Automating Style Corrections"></a>Automating Style Corrections</h2><p>Linter with flake8’s help surfaces style related errors and warnings but doesn’t correct it for you. The python package autopep8 on the other hand autocorrects your errors. Install autopep8 via the command line as follows:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install autopep8</span><br></pre></td></tr></table></figure>
+<p>Formatting issues identified by PEP8 checkers are listed at <a href="https://pep8.readthedocs.io/en/latest/intro.html#error-codes" target="_blank" rel="noopener">PEP8 Error Codes</a>. autopep8 is capable of fixing most of these. autopep8 can be used via the command line to fix errors like so:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">autopep8 --in-place --aggressive --aggressive &lt;filename&gt;</span><br></pre></td></tr></table></figure>
+<p>Within an editor or a development environment its very convenient if the auto corrections are transparent and don’t involve invoking utilities via the command line. A good point for auto correction if often when a source code file is saved after it is edited. Atom’s atom-beautify package allows integration of autopep8 as the beautifier for Python code. It also offers the option to “Beautify on Save”. Install atom-beautify as follows:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apm install atom-beautify</span><br></pre></td></tr></table></figure>
+<p>Look at Figure 2, which illustrates the configuration options for Python within atom-beautify settings.</p>
+<p><img src="http://shanky.org/assets/images/atom_beautify_configuration_options_for_pyton.png" alt="img">Figure 2: atom-beautify configuration options for Python</p>
+
+        </div>
+    
+
+</div>
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
             <a href="/2017/12/28/About-Python-Class-s-init/">
                 About Python Class's '__Init__'
             </a>
@@ -1170,36 +1227,6 @@
 
 </div>
             
-                
-<div class="post">
-
-    <div class="post-header index">
-        <h1 class="title">
-            <a href="/2017/12/16/“Linux下安装Qt4-8”/">
-                “Linux下安装Qt4.8”
-            </a>
-        </h1>
-        <div class="post-info">
-            
-                <span class="date">2017-12-16</span>
-            
-            
-            
-        </div>
-    </div>
-
-    
-        <div class="content">
-            <p>Ubuntu下使用atp-get安装，方法如下（未验证）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install qt4-dev-tools #开发包 　　</span><br><span class="line">sudo apt-get install qtcreator #IDE　　</span><br><span class="line">sudo apt-get install qt4-doc #开发帮助文档 　　</span><br><span class="line">sudo apt-get install qt4-qtconfig #配置工具 　　</span><br><span class="line">sudo apt-get install qt4-demos #DEMO源码  QT</span><br></pre></td></tr></table></figure>
-<p><strong>But以上代码中有些为失效状态，考虑用以下命令替代：</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Ubuntu下安装Qt 复制代码 代码如下: $ sudo apt-get install qt4-dev-tools qt4-doc qt4-qtconfig qt4-demos qt4-designer 注：qt4-dev-tools 包含了Qt Assistant及Qt Linguist等工具，因此不需要单独安装这两个工具。</span><br></pre></td></tr></table></figure>
-
-        </div>
-    
-
-</div>
-            
         </section>
     </div>
 </div>
@@ -1242,6 +1269,10 @@
         <ul>
             
             <li>
+                <a class="footer-post" href="/2018/02/12/Using-selenium-get-html-pagesourge-md/">Using Selenium Get Html p</a>
+            </li>
+            
+            <li>
                 <a class="footer-post" href="/2018/01/16/解决hexo配置过程中遇到的错误的问题/">解决Hexo配置过程中遇到的错误的问题</a>
             </li>
             
@@ -1251,10 +1282,6 @@
             
             <li>
                 <a class="footer-post" href="/2018/01/11/python爬虫较为常用packages/">Python爬虫较为常用packages</a>
-            </li>
-            
-            <li>
-                <a class="footer-post" href="/2018/01/08/Regex-syntax/">Regex Syntax</a>
             </li>
             
         </ul>
